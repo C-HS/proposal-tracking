@@ -1,0 +1,50 @@
+{
+	"proposalId": "",
+	"dateReceive": "",
+	"stateName": "",
+	"totalProposalCost": "",
+	"totalCentralShare": "",
+	"totalStateShare": "",
+	"totalOtherShare": "",
+	"amountApproved": "",
+	"proposalDocumentURL": "",
+	"shpcDocumentURL": "",
+	"dateLastUpdate": "",
+	"proposalStatus": "",
+	"components": [{
+		"componentId": "",
+		"componentName": "",
+		"projectCost": "",
+		"centralShare": "",
+		"stateShare": "",
+		"otherShare": "",
+		"unit": "",
+		"firstInstallment": "",
+		"bothInstallment": "",
+		"actionPlanDocumentURL": "",
+		"shpcDocumentURL": "",
+		"dateTime": "",
+		"componentStatus": "",
+		"projects": [{
+			"projectTypeId": "Disposal",
+			"projectCost": "",
+			"centralShare": "",
+			"stateShare": "",
+			"otherShare": "",
+			"subType": "Dumpsite Remediation",
+			"dumpsites": [{
+				"dumpsite": "1",
+				"quantity": "",
+				"area": "",
+				"year_of_start": "",
+				"height": ""
+			}, {
+				"dumpsite": "2",
+				"quantity": "",
+				"area": "",
+				"year_of_start": "",
+				"height": ""
+			}]
+		}]
+	}]
+}

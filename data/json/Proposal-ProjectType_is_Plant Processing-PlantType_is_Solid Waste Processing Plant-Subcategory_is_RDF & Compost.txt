@@ -1,0 +1,65 @@
+{
+	"proposalId": "",
+	"dateReceive": "",
+	"stateName": "",
+	"totalProposalCost": "",
+	"totalCentralShare": "",
+	"totalStateShare": "",
+	"totalOtherShare": "",
+	"amountApproved": "",
+	"proposalDocumentURL": "",
+	"shpcDocumentURL": "",
+	"dateLastUpdate": "",
+	"proposalStatus": "",
+	"components": [{
+		"componentId": "",
+		"componentName": "",
+		"projectCost": "",
+		"centralShare": "",
+		"stateShare": "",
+		"otherShare": "",
+		"unit": "",
+		"firstInstallment": "",
+		"bothInstallment": "",
+		"actionPlanDocumentURL": "",
+		"shpcDocumentURL": "",
+		"dateTime": "",
+		"componentStatus": "",
+		"projects": [{
+			"projectTypeId": "Processing Plant",
+			"projectCost": "",
+			"centralShare": "",
+			"stateShare": "",
+			"otherShare": "",
+			"plant_info": {
+				"State": "",
+				"district": "",
+				"city_ulb": "",
+				"ward": "",
+				"is_it_integrated": "Yes OR No",
+				"status": "",
+				"plant_type": "Solid Waste Processing Plant",
+				"sub_category": "RDF & Compost",
+				"designed_input_capacity_per_day": {
+					"dry": "Yes OR No",
+					"dry_ton": "",
+					"mixed": "Yes OR No",
+					"mixed_ton": ""
+				}
+			},
+			"address": {
+				"address": "",
+				"landmark": "",
+				"latitude": "",
+				"longitude": ""
+			},
+			"plant_video_image": ["file_name1", "file_name2", "file_namen"],
+			"ulb": ["ulb1", "ulb2", "ulbn"],
+			"detail": {
+				"cost": "",
+				"funded_by": "",
+				"dpr_file_name": ""
+			}
+		}]
+	}]
+}
