@@ -1,0 +1,101 @@
+{
+	"proposalId": "",
+	"dateReceive": "",
+	"stateName": "",
+	"totalProposalCost": "",
+	"totalCentralShare": "",
+	"totalStateShare": "",
+	"totalOtherShare": "",
+	"amountApproved": "",
+	"proposalDocumentURL": "",
+	"shpcDocumentURL": "",
+	"dateLastUpdate": "",
+	"proposalStatus": "",
+	"components": [{
+		"componentId": "",
+		"componentName": "",
+		"projectCost": "",
+		"centralShare": "",
+		"stateShare": "",
+		"otherShare": "",
+		"unit": "",
+		"firstInstallment": "",
+		"bothInstallment": "",
+		"actionPlanDocumentURL": "",
+		"shpcDocumentURL": "",
+		"dateTime": "",
+		"componentStatus": "",
+		"projects": [{
+			"projectTypeId": "Disposal",
+			"projectCost": "",
+			"centralShare": "",
+			"stateShare": "",
+			"otherShare": "",
+			"subType": "",
+			"project_brief": "",
+			"file_name": "",
+			"plant_info": {
+				"State": "",
+				"district": "",
+				"city_ulb": "",
+				"ward": "",
+				"landfill_mis_id": "",
+				"landfill_name": "",
+				"status": "",
+				"cost": "",
+				"date_of_start": "",
+				"projected_year_of_operation": ""
+			},
+			"size_and_capacity": {
+				"area_acre": "",
+				"designed_height_of_top": "",
+				"current_height_of_top": "",
+				"average_waste_went_to_slf": "",
+				"quantity_disposed_till_date_ton": "",
+				"temporary_waste_storage_area_awailable": "Yes OR No",
+				"temporary_waste_inspection_area_awailable": "Yes OR No"
+			},
+			"address": {
+				"address": "",
+				"landmark": "",
+				"latitude": "",
+				"longitude": ""
+			},
+			"plant_video_image": ["file_name1", "file_name2", "file_namen"],
+			"detail": {
+				"distance_to_nearest_water_body_meter": "",
+				"distance_of_landfill_boundry_to_nearest_habitation_kms": "",
+				"is_it_located_on_hill_side": "Yes Or No"
+			},
+			"features": {
+				"is_non_permeable_lining_system_available": "Yes Or No",
+				"is_there_mechanism_for_laeachate_collection": "Yes Or No",
+				"is_there_mechanism_for_daily_covering": "Yes Or No",
+				"is_ground_water_quality_monitoring": "Yes Or No"
+			},
+			"serving_to_other_ulb": {
+				"is_landfill_shared_regional_slf": "Yes Or No",
+				"ulb": [{
+					"ulb": "ULB1",
+					"is_distance_from_landfill_greater_than50": "Yes Or No"
+				}, {
+					"ulb": "ULB2",
+					"is_distance_from_landfill_greater_than50": "Yes Or No"
+				}]
+			},
+			"dumpsites": [{
+				"dumpsite": "1",
+				"quantity": "",
+				"area": "",
+				"year_of_start": "",
+				"height": ""
+			}, {
+				"dumpsite": "2",
+				"quantity": "",
+				"area": "",
+				"year_of_start": "",
+				"height": ""
+			}]
+		}]
+	}]
+}

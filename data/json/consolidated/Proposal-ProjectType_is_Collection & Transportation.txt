@@ -1,0 +1,47 @@
+{
+	"proposalId": "",
+	"dateReceive": "",
+	"stateName": "",
+	"totalProposalCost": "",
+	"totalCentralShare": "",
+	"totalStateShare": "",
+	"totalOtherShare": "",
+	"amountApproved": "",
+	"proposalDocumentURL": "",
+	"shpcDocumentURL": "",
+	"dateLastUpdate": "",
+	"proposalStatus": "",
+	"components": [{
+		"componentId": "",
+		"componentName": "",
+		"projectCost": "",
+		"centralShare": "",
+		"stateShare": "",
+		"otherShare": "",
+		"unit": "",
+		"firstInstallment": "",
+		"bothInstallment": "",
+		"actionPlanDocumentURL": "",
+		"shpcDocumentURL": "",
+		"dateTime": "",
+		"componentStatus": "",
+		"projects": [{
+			"projectTypeId": "Collection & Transportation",
+			"projectCost": "",
+			"centralShare": "",
+			"stateShare": "",
+			"otherShare": "",
+			"waterbody": {
+				"cleaningOfWater": "Yes OR No",
+				"noOfToilets": "",
+				"solidWasteVisible": "Yes OR No",
+				"openDumpSitePresent": "Yes OR No",
+				"gvpPresent": "Yes OR No",
+				"cleanlinessDisplayed": "Yes OR No",
+				"adequateTwin": "Yes OR No",
+				"cleaningArrangements": "Yes OR No",
+				"trashCleanerAvailable": "Yes OR No"
+			}
+		}]
+	}]
+}
