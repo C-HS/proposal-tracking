@@ -1,0 +1,714 @@
+==================================
+package ;
+public class Plant_info
+{
+    private String State;
+
+    private String district;
+
+    private String city_ulb;
+
+    private String ward;
+
+    private String landfill_mis_id;
+
+    private String landfill_name;
+
+    private String status;
+
+    private String cost;
+
+    private String date_of_start;
+
+    private String projected_year_of_operation;
+
+    public void setState(String State){
+        this.State = State;
+    }
+    public String getState(){
+        return this.State;
+    }
+    public void setDistrict(String district){
+        this.district = district;
+    }
+    public String getDistrict(){
+        return this.district;
+    }
+    public void setCity_ulb(String city_ulb){
+        this.city_ulb = city_ulb;
+    }
+    public String getCity_ulb(){
+        return this.city_ulb;
+    }
+    public void setWard(String ward){
+        this.ward = ward;
+    }
+    public String getWard(){
+        return this.ward;
+    }
+    public void setLandfill_mis_id(String landfill_mis_id){
+        this.landfill_mis_id = landfill_mis_id;
+    }
+    public String getLandfill_mis_id(){
+        return this.landfill_mis_id;
+    }
+    public void setLandfill_name(String landfill_name){
+        this.landfill_name = landfill_name;
+    }
+    public String getLandfill_name(){
+        return this.landfill_name;
+    }
+    public void setStatus(String status){
+        this.status = status;
+    }
+    public String getStatus(){
+        return this.status;
+    }
+    public void setCost(String cost){
+        this.cost = cost;
+    }
+    public String getCost(){
+        return this.cost;
+    }
+    public void setDate_of_start(String date_of_start){
+        this.date_of_start = date_of_start;
+    }
+    public String getDate_of_start(){
+        return this.date_of_start;
+    }
+    public void setProjected_year_of_operation(String projected_year_of_operation){
+        this.projected_year_of_operation = projected_year_of_operation;
+    }
+    public String getProjected_year_of_operation(){
+        return this.projected_year_of_operation;
+    }
+}
+
+==================================
+package ;
+public class Size_and_capacity
+{
+    private String area_acre;
+
+    private String designed_height_of_top;
+
+    private String current_height_of_top;
+
+    private String average_waste_went_to_slf;
+
+    private String quantity_disposed_till_date_ton;
+
+    private String temporary_waste_storage_area_awailable;
+
+    private String temporary_waste_inspection_area_awailable;
+
+    public void setArea_acre(String area_acre){
+        this.area_acre = area_acre;
+    }
+    public String getArea_acre(){
+        return this.area_acre;
+    }
+    public void setDesigned_height_of_top(String designed_height_of_top){
+        this.designed_height_of_top = designed_height_of_top;
+    }
+    public String getDesigned_height_of_top(){
+        return this.designed_height_of_top;
+    }
+    public void setCurrent_height_of_top(String current_height_of_top){
+        this.current_height_of_top = current_height_of_top;
+    }
+    public String getCurrent_height_of_top(){
+        return this.current_height_of_top;
+    }
+    public void setAverage_waste_went_to_slf(String average_waste_went_to_slf){
+        this.average_waste_went_to_slf = average_waste_went_to_slf;
+    }
+    public String getAverage_waste_went_to_slf(){
+        return this.average_waste_went_to_slf;
+    }
+    public void setQuantity_disposed_till_date_ton(String quantity_disposed_till_date_ton){
+        this.quantity_disposed_till_date_ton = quantity_disposed_till_date_ton;
+    }
+    public String getQuantity_disposed_till_date_ton(){
+        return this.quantity_disposed_till_date_ton;
+    }
+    public void setTemporary_waste_storage_area_awailable(String temporary_waste_storage_area_awailable){
+        this.temporary_waste_storage_area_awailable = temporary_waste_storage_area_awailable;
+    }
+    public String getTemporary_waste_storage_area_awailable(){
+        return this.temporary_waste_storage_area_awailable;
+    }
+    public void setTemporary_waste_inspection_area_awailable(String temporary_waste_inspection_area_awailable){
+        this.temporary_waste_inspection_area_awailable = temporary_waste_inspection_area_awailable;
+    }
+    public String getTemporary_waste_inspection_area_awailable(){
+        return this.temporary_waste_inspection_area_awailable;
+    }
+}
+
+==================================
+package ;
+public class Address
+{
+    private String address;
+
+    private String landmark;
+
+    private String latitude;
+
+    private String longitude;
+
+    public void setAddress(String address){
+        this.address = address;
+    }
+    public String getAddress(){
+        return this.address;
+    }
+    public void setLandmark(String landmark){
+        this.landmark = landmark;
+    }
+    public String getLandmark(){
+        return this.landmark;
+    }
+    public void setLatitude(String latitude){
+        this.latitude = latitude;
+    }
+    public String getLatitude(){
+        return this.latitude;
+    }
+    public void setLongitude(String longitude){
+        this.longitude = longitude;
+    }
+    public String getLongitude(){
+        return this.longitude;
+    }
+}
+
+==================================
+package ;
+public class Detail
+{
+    private String distance_to_nearest_water_body_meter;
+
+    private String distance_of_landfill_boundry_to_nearest_habitation_kms;
+
+    private String is_it_located_on_hill_side;
+
+    public void setDistance_to_nearest_water_body_meter(String distance_to_nearest_water_body_meter){
+        this.distance_to_nearest_water_body_meter = distance_to_nearest_water_body_meter;
+    }
+    public String getDistance_to_nearest_water_body_meter(){
+        return this.distance_to_nearest_water_body_meter;
+    }
+    public void setDistance_of_landfill_boundry_to_nearest_habitation_kms(String distance_of_landfill_boundry_to_nearest_habitation_kms){
+        this.distance_of_landfill_boundry_to_nearest_habitation_kms = distance_of_landfill_boundry_to_nearest_habitation_kms;
+    }
+    public String getDistance_of_landfill_boundry_to_nearest_habitation_kms(){
+        return this.distance_of_landfill_boundry_to_nearest_habitation_kms;
+    }
+    public void setIs_it_located_on_hill_side(String is_it_located_on_hill_side){
+        this.is_it_located_on_hill_side = is_it_located_on_hill_side;
+    }
+    public String getIs_it_located_on_hill_side(){
+        return this.is_it_located_on_hill_side;
+    }
+}
+
+==================================
+package ;
+public class Features
+{
+    private String is_non_permeable_lining_system_available;
+
+    private String is_there_mechanism_for_laeachate_collection;
+
+    private String is_there_mechanism_for_daily_covering;
+
+    private String is_ground_water_quality_monitoring;
+
+    public void setIs_non_permeable_lining_system_available(String is_non_permeable_lining_system_available){
+        this.is_non_permeable_lining_system_available = is_non_permeable_lining_system_available;
+    }
+    public String getIs_non_permeable_lining_system_available(){
+        return this.is_non_permeable_lining_system_available;
+    }
+    public void setIs_there_mechanism_for_laeachate_collection(String is_there_mechanism_for_laeachate_collection){
+        this.is_there_mechanism_for_laeachate_collection = is_there_mechanism_for_laeachate_collection;
+    }
+    public String getIs_there_mechanism_for_laeachate_collection(){
+        return this.is_there_mechanism_for_laeachate_collection;
+    }
+    public void setIs_there_mechanism_for_daily_covering(String is_there_mechanism_for_daily_covering){
+        this.is_there_mechanism_for_daily_covering = is_there_mechanism_for_daily_covering;
+    }
+    public String getIs_there_mechanism_for_daily_covering(){
+        return this.is_there_mechanism_for_daily_covering;
+    }
+    public void setIs_ground_water_quality_monitoring(String is_ground_water_quality_monitoring){
+        this.is_ground_water_quality_monitoring = is_ground_water_quality_monitoring;
+    }
+    public String getIs_ground_water_quality_monitoring(){
+        return this.is_ground_water_quality_monitoring;
+    }
+}
+
+==================================
+package ;
+public class Ulb
+{
+    private String ulb;
+
+    private String is_distance_from_landfill_greater_than50;
+
+    public void setUlb(String ulb){
+        this.ulb = ulb;
+    }
+    public String getUlb(){
+        return this.ulb;
+    }
+    public void setIs_distance_from_landfill_greater_than50(String is_distance_from_landfill_greater_than50){
+        this.is_distance_from_landfill_greater_than50 = is_distance_from_landfill_greater_than50;
+    }
+    public String getIs_distance_from_landfill_greater_than50(){
+        return this.is_distance_from_landfill_greater_than50;
+    }
+}
+
+==================================
+package ;
+import java.util.ArrayList;
+import java.util.List;
+public class Serving_to_other_ulb
+{
+    private String is_landfill_shared_regional_slf;
+
+    private List<Ulb> ulb;
+
+    public void setIs_landfill_shared_regional_slf(String is_landfill_shared_regional_slf){
+        this.is_landfill_shared_regional_slf = is_landfill_shared_regional_slf;
+    }
+    public String getIs_landfill_shared_regional_slf(){
+        return this.is_landfill_shared_regional_slf;
+    }
+    public void setUlb(List<Ulb> ulb){
+        this.ulb = ulb;
+    }
+    public List<Ulb> getUlb(){
+        return this.ulb;
+    }
+}
+
+==================================
+package ;
+public class Dumpsites
+{
+    private String dumpsite;
+
+    private String quantity;
+
+    private String area;
+
+    private String year_of_start;
+
+    private String height;
+
+    public void setDumpsite(String dumpsite){
+        this.dumpsite = dumpsite;
+    }
+    public String getDumpsite(){
+        return this.dumpsite;
+    }
+    public void setQuantity(String quantity){
+        this.quantity = quantity;
+    }
+    public String getQuantity(){
+        return this.quantity;
+    }
+    public void setArea(String area){
+        this.area = area;
+    }
+    public String getArea(){
+        return this.area;
+    }
+    public void setYear_of_start(String year_of_start){
+        this.year_of_start = year_of_start;
+    }
+    public String getYear_of_start(){
+        return this.year_of_start;
+    }
+    public void setHeight(String height){
+        this.height = height;
+    }
+    public String getHeight(){
+        return this.height;
+    }
+}
+
+==================================
+package ;
+import java.util.ArrayList;
+import java.util.List;
+public class Projects
+{
+    private String projectTypeId;
+
+    private String projectCost;
+
+    private String centralShare;
+
+    private String stateShare;
+
+    private String otherShare;
+
+    private String subType;
+
+    private String project_brief;
+
+    private String file_name;
+
+    private Plant_info plant_info;
+
+    private Size_and_capacity size_and_capacity;
+
+    private Address address;
+
+    private List<String> plant_video_image;
+
+    private Detail detail;
+
+    private Features features;
+
+    private Serving_to_other_ulb serving_to_other_ulb;
+
+    private List<Dumpsites> dumpsites;
+
+    public void setProjectTypeId(String projectTypeId){
+        this.projectTypeId = projectTypeId;
+    }
+    public String getProjectTypeId(){
+        return this.projectTypeId;
+    }
+    public void setProjectCost(String projectCost){
+        this.projectCost = projectCost;
+    }
+    public String getProjectCost(){
+        return this.projectCost;
+    }
+    public void setCentralShare(String centralShare){
+        this.centralShare = centralShare;
+    }
+    public String getCentralShare(){
+        return this.centralShare;
+    }
+    public void setStateShare(String stateShare){
+        this.stateShare = stateShare;
+    }
+    public String getStateShare(){
+        return this.stateShare;
+    }
+    public void setOtherShare(String otherShare){
+        this.otherShare = otherShare;
+    }
+    public String getOtherShare(){
+        return this.otherShare;
+    }
+    public void setSubType(String subType){
+        this.subType = subType;
+    }
+    public String getSubType(){
+        return this.subType;
+    }
+    public void setProject_brief(String project_brief){
+        this.project_brief = project_brief;
+    }
+    public String getProject_brief(){
+        return this.project_brief;
+    }
+    public void setFile_name(String file_name){
+        this.file_name = file_name;
+    }
+    public String getFile_name(){
+        return this.file_name;
+    }
+    public void setPlant_info(Plant_info plant_info){
+        this.plant_info = plant_info;
+    }
+    public Plant_info getPlant_info(){
+        return this.plant_info;
+    }
+    public void setSize_and_capacity(Size_and_capacity size_and_capacity){
+        this.size_and_capacity = size_and_capacity;
+    }
+    public Size_and_capacity getSize_and_capacity(){
+        return this.size_and_capacity;
+    }
+    public void setAddress(Address address){
+        this.address = address;
+    }
+    public Address getAddress(){
+        return this.address;
+    }
+    public void setPlant_video_image(List<String> plant_video_image){
+        this.plant_video_image = plant_video_image;
+    }
+    public List<String> getPlant_video_image(){
+        return this.plant_video_image;
+    }
+    public void setDetail(Detail detail){
+        this.detail = detail;
+    }
+    public Detail getDetail(){
+        return this.detail;
+    }
+    public void setFeatures(Features features){
+        this.features = features;
+    }
+    public Features getFeatures(){
+        return this.features;
+    }
+    public void setServing_to_other_ulb(Serving_to_other_ulb serving_to_other_ulb){
+        this.serving_to_other_ulb = serving_to_other_ulb;
+    }
+    public Serving_to_other_ulb getServing_to_other_ulb(){
+        return this.serving_to_other_ulb;
+    }
+    public void setDumpsites(List<Dumpsites> dumpsites){
+        this.dumpsites = dumpsites;
+    }
+    public List<Dumpsites> getDumpsites(){
+        return this.dumpsites;
+    }
+}
+
+==================================
+package ;
+import java.util.ArrayList;
+import java.util.List;
+public class Components
+{
+    private String componentId;
+
+    private String componentName;
+
+    private String projectCost;
+
+    private String centralShare;
+
+    private String stateShare;
+
+    private String otherShare;
+
+    private String unit;
+
+    private String firstInstallment;
+
+    private String bothInstallment;
+
+    private String actionPlanDocumentURL;
+
+    private String shpcDocumentURL;
+
+    private String dateTime;
+
+    private String componentStatus;
+
+    private List<Projects> projects;
+
+    public void setComponentId(String componentId){
+        this.componentId = componentId;
+    }
+    public String getComponentId(){
+        return this.componentId;
+    }
+    public void setComponentName(String componentName){
+        this.componentName = componentName;
+    }
+    public String getComponentName(){
+        return this.componentName;
+    }
+    public void setProjectCost(String projectCost){
+        this.projectCost = projectCost;
+    }
+    public String getProjectCost(){
+        return this.projectCost;
+    }
+    public void setCentralShare(String centralShare){
+        this.centralShare = centralShare;
+    }
+    public String getCentralShare(){
+        return this.centralShare;
+    }
+    public void setStateShare(String stateShare){
+        this.stateShare = stateShare;
+    }
+    public String getStateShare(){
+        return this.stateShare;
+    }
+    public void setOtherShare(String otherShare){
+        this.otherShare = otherShare;
+    }
+    public String getOtherShare(){
+        return this.otherShare;
+    }
+    public void setUnit(String unit){
+        this.unit = unit;
+    }
+    public String getUnit(){
+        return this.unit;
+    }
+    public void setFirstInstallment(String firstInstallment){
+        this.firstInstallment = firstInstallment;
+    }
+    public String getFirstInstallment(){
+        return this.firstInstallment;
+    }
+    public void setBothInstallment(String bothInstallment){
+        this.bothInstallment = bothInstallment;
+    }
+    public String getBothInstallment(){
+        return this.bothInstallment;
+    }
+    public void setActionPlanDocumentURL(String actionPlanDocumentURL){
+        this.actionPlanDocumentURL = actionPlanDocumentURL;
+    }
+    public String getActionPlanDocumentURL(){
+        return this.actionPlanDocumentURL;
+    }
+    public void setShpcDocumentURL(String shpcDocumentURL){
+        this.shpcDocumentURL = shpcDocumentURL;
+    }
+    public String getShpcDocumentURL(){
+        return this.shpcDocumentURL;
+    }
+    public void setDateTime(String dateTime){
+        this.dateTime = dateTime;
+    }
+    public String getDateTime(){
+        return this.dateTime;
+    }
+    public void setComponentStatus(String componentStatus){
+        this.componentStatus = componentStatus;
+    }
+    public String getComponentStatus(){
+        return this.componentStatus;
+    }
+    public void setProjects(List<Projects> projects){
+        this.projects = projects;
+    }
+    public List<Projects> getProjects(){
+        return this.projects;
+    }
+}
+
+==================================
+package ;
+import java.util.ArrayList;
+import java.util.List;
+public class Root
+{
+    private String proposalId;
+
+    private String dateReceive;
+
+    private String stateName;
+
+    private String totalProposalCost;
+
+    private String totalCentralShare;
+
+    private String totalStateShare;
+
+    private String totalOtherShare;
+
+    private String amountApproved;
+
+    private String proposalDocumentURL;
+
+    private String shpcDocumentURL;
+
+    private String dateLastUpdate;
+
+    private String proposalStatus;
+
+    private List<Components> components;
+
+    public void setProposalId(String proposalId){
+        this.proposalId = proposalId;
+    }
+    public String getProposalId(){
+        return this.proposalId;
+    }
+    public void setDateReceive(String dateReceive){
+        this.dateReceive = dateReceive;
+    }
+    public String getDateReceive(){
+        return this.dateReceive;
+    }
+    public void setStateName(String stateName){
+        this.stateName = stateName;
+    }
+    public String getStateName(){
+        return this.stateName;
+    }
+    public void setTotalProposalCost(String totalProposalCost){
+        this.totalProposalCost = totalProposalCost;
+    }
+    public String getTotalProposalCost(){
+        return this.totalProposalCost;
+    }
+    public void setTotalCentralShare(String totalCentralShare){
+        this.totalCentralShare = totalCentralShare;
+    }
+    public String getTotalCentralShare(){
+        return this.totalCentralShare;
+    }
+    public void setTotalStateShare(String totalStateShare){
+        this.totalStateShare = totalStateShare;
+    }
+    public String getTotalStateShare(){
+        return this.totalStateShare;
+    }
+    public void setTotalOtherShare(String totalOtherShare){
+        this.totalOtherShare = totalOtherShare;
+    }
+    public String getTotalOtherShare(){
+        return this.totalOtherShare;
+    }
+    public void setAmountApproved(String amountApproved){
+        this.amountApproved = amountApproved;
+    }
+    public String getAmountApproved(){
+        return this.amountApproved;
+    }
+    public void setProposalDocumentURL(String proposalDocumentURL){
+        this.proposalDocumentURL = proposalDocumentURL;
+    }
+    public String getProposalDocumentURL(){
+        return this.proposalDocumentURL;
+    }
+    public void setShpcDocumentURL(String shpcDocumentURL){
+        this.shpcDocumentURL = shpcDocumentURL;
+    }
+    public String getShpcDocumentURL(){
+        return this.shpcDocumentURL;
+    }
+    public void setDateLastUpdate(String dateLastUpdate){
+        this.dateLastUpdate = dateLastUpdate;
+    }
+    public String getDateLastUpdate(){
+        return this.dateLastUpdate;
+    }
+    public void setProposalStatus(String proposalStatus){
+        this.proposalStatus = proposalStatus;
+    }
+    public String getProposalStatus(){
+        return this.proposalStatus;
+    }
+    public void setComponents(List<Components> components){
+        this.components = components;
+    }
+    public List<Components> getComponents(){
+        return this.components;
+    }
+}
+

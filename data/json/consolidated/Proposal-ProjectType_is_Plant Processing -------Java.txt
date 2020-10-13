@@ -1,0 +1,692 @@
+==================================
+package ;
+public class Fstp_technology_details
+{
+    private String level_of_treatement;
+
+    private String technology_used_for_primary_and_secondary;
+
+    private String method_of_disposal_of_treated_effluent;
+
+    private String is_co-treatement_of_faecal_sludge_happening;
+
+    public void setLevel_of_treatement(String level_of_treatement){
+        this.level_of_treatement = level_of_treatement;
+    }
+    public String getLevel_of_treatement(){
+        return this.level_of_treatement;
+    }
+    public void setTechnology_used_for_primary_and_secondary(String technology_used_for_primary_and_secondary){
+        this.technology_used_for_primary_and_secondary = technology_used_for_primary_and_secondary;
+    }
+    public String getTechnology_used_for_primary_and_secondary(){
+        return this.technology_used_for_primary_and_secondary;
+    }
+    public void setMethod_of_disposal_of_treated_effluent(String method_of_disposal_of_treated_effluent){
+        this.method_of_disposal_of_treated_effluent = method_of_disposal_of_treated_effluent;
+    }
+    public String getMethod_of_disposal_of_treated_effluent(){
+        return this.method_of_disposal_of_treated_effluent;
+    }
+    public void setIs_co-treatement_of_faecal_sludge_happening(String is_co-treatement_of_faecal_sludge_happening){
+        this.is_co-treatement_of_faecal_sludge_happening = is_co-treatement_of_faecal_sludge_happening;
+    }
+    public String getIs_co-treatement_of_faecal_sludge_happening(){
+        return this.is_co-treatement_of_faecal_sludge_happening;
+    }
+}
+
+==================================
+package ;
+public class STP_technology_detail
+{
+    private String technology_used;
+
+    private String disposal_method;
+
+    public void setTechnology_used(String technology_used){
+        this.technology_used = technology_used;
+    }
+    public String getTechnology_used(){
+        return this.technology_used;
+    }
+    public void setDisposal_method(String disposal_method){
+        this.disposal_method = disposal_method;
+    }
+    public String getDisposal_method(){
+        return this.disposal_method;
+    }
+}
+
+==================================
+package ;
+public class Designed_input_capacity_per_day
+{
+    private String C_D_Waste;
+
+    private String C_D_Waste_ton;
+
+    private String domestic_hazardous;
+
+    private String domestic_hazardous_ton;
+
+    private String sanitary;
+
+    private String sanitary_ton;
+
+    private String mixed;
+
+    private String mixed_ton;
+
+    private String dry;
+
+    private String dry_ton;
+
+    private String wet;
+
+    private String wet_ton;
+
+    private String rdf;
+
+    private String rdf_ton;
+
+    private String sewage;
+
+    private String sewage_ton;
+
+    private String faecal;
+
+    private String faecal_kl;
+
+    private Fstp_technology_details fstp_technology_details;
+
+    private STP_technology_detail STP_technology_detail;
+
+    public void setC_D_Waste(String C_D_Waste){
+        this.C_D_Waste = C_D_Waste;
+    }
+    public String getC_D_Waste(){
+        return this.C_D_Waste;
+    }
+    public void setC_D_Waste_ton(String C_D_Waste_ton){
+        this.C_D_Waste_ton = C_D_Waste_ton;
+    }
+    public String getC_D_Waste_ton(){
+        return this.C_D_Waste_ton;
+    }
+    public void setDomestic_hazardous(String domestic_hazardous){
+        this.domestic_hazardous = domestic_hazardous;
+    }
+    public String getDomestic_hazardous(){
+        return this.domestic_hazardous;
+    }
+    public void setDomestic_hazardous_ton(String domestic_hazardous_ton){
+        this.domestic_hazardous_ton = domestic_hazardous_ton;
+    }
+    public String getDomestic_hazardous_ton(){
+        return this.domestic_hazardous_ton;
+    }
+    public void setSanitary(String sanitary){
+        this.sanitary = sanitary;
+    }
+    public String getSanitary(){
+        return this.sanitary;
+    }
+    public void setSanitary_ton(String sanitary_ton){
+        this.sanitary_ton = sanitary_ton;
+    }
+    public String getSanitary_ton(){
+        return this.sanitary_ton;
+    }
+    public void setMixed(String mixed){
+        this.mixed = mixed;
+    }
+    public String getMixed(){
+        return this.mixed;
+    }
+    public void setMixed_ton(String mixed_ton){
+        this.mixed_ton = mixed_ton;
+    }
+    public String getMixed_ton(){
+        return this.mixed_ton;
+    }
+    public void setDry(String dry){
+        this.dry = dry;
+    }
+    public String getDry(){
+        return this.dry;
+    }
+    public void setDry_ton(String dry_ton){
+        this.dry_ton = dry_ton;
+    }
+    public String getDry_ton(){
+        return this.dry_ton;
+    }
+    public void setWet(String wet){
+        this.wet = wet;
+    }
+    public String getWet(){
+        return this.wet;
+    }
+    public void setWet_ton(String wet_ton){
+        this.wet_ton = wet_ton;
+    }
+    public String getWet_ton(){
+        return this.wet_ton;
+    }
+    public void setRdf(String rdf){
+        this.rdf = rdf;
+    }
+    public String getRdf(){
+        return this.rdf;
+    }
+    public void setRdf_ton(String rdf_ton){
+        this.rdf_ton = rdf_ton;
+    }
+    public String getRdf_ton(){
+        return this.rdf_ton;
+    }
+    public void setSewage(String sewage){
+        this.sewage = sewage;
+    }
+    public String getSewage(){
+        return this.sewage;
+    }
+    public void setSewage_ton(String sewage_ton){
+        this.sewage_ton = sewage_ton;
+    }
+    public String getSewage_ton(){
+        return this.sewage_ton;
+    }
+    public void setFaecal(String faecal){
+        this.faecal = faecal;
+    }
+    public String getFaecal(){
+        return this.faecal;
+    }
+    public void setFaecal_kl(String faecal_kl){
+        this.faecal_kl = faecal_kl;
+    }
+    public String getFaecal_kl(){
+        return this.faecal_kl;
+    }
+    public void setFstp_technology_details(Fstp_technology_details fstp_technology_details){
+        this.fstp_technology_details = fstp_technology_details;
+    }
+    public Fstp_technology_details getFstp_technology_details(){
+        return this.fstp_technology_details;
+    }
+    public void setSTP_technology_detail(STP_technology_detail STP_technology_detail){
+        this.STP_technology_detail = STP_technology_detail;
+    }
+    public STP_technology_detail getSTP_technology_detail(){
+        return this.STP_technology_detail;
+    }
+}
+
+==================================
+package ;
+public class Plant_info
+{
+    private String State;
+
+    private String district;
+
+    private String city_ulb;
+
+    private String ward;
+
+    private String is_it_integrated;
+
+    private String status;
+
+    private String plant_type;
+
+    private String sub_category;
+
+    private Designed_input_capacity_per_day designed_input_capacity_per_day;
+
+    public void setState(String State){
+        this.State = State;
+    }
+    public String getState(){
+        return this.State;
+    }
+    public void setDistrict(String district){
+        this.district = district;
+    }
+    public String getDistrict(){
+        return this.district;
+    }
+    public void setCity_ulb(String city_ulb){
+        this.city_ulb = city_ulb;
+    }
+    public String getCity_ulb(){
+        return this.city_ulb;
+    }
+    public void setWard(String ward){
+        this.ward = ward;
+    }
+    public String getWard(){
+        return this.ward;
+    }
+    public void setIs_it_integrated(String is_it_integrated){
+        this.is_it_integrated = is_it_integrated;
+    }
+    public String getIs_it_integrated(){
+        return this.is_it_integrated;
+    }
+    public void setStatus(String status){
+        this.status = status;
+    }
+    public String getStatus(){
+        return this.status;
+    }
+    public void setPlant_type(String plant_type){
+        this.plant_type = plant_type;
+    }
+    public String getPlant_type(){
+        return this.plant_type;
+    }
+    public void setSub_category(String sub_category){
+        this.sub_category = sub_category;
+    }
+    public String getSub_category(){
+        return this.sub_category;
+    }
+    public void setDesigned_input_capacity_per_day(Designed_input_capacity_per_day designed_input_capacity_per_day){
+        this.designed_input_capacity_per_day = designed_input_capacity_per_day;
+    }
+    public Designed_input_capacity_per_day getDesigned_input_capacity_per_day(){
+        return this.designed_input_capacity_per_day;
+    }
+}
+
+==================================
+package ;
+public class Address
+{
+    private String address;
+
+    private String landmark;
+
+    private String latitude;
+
+    private String longitude;
+
+    public void setAddress(String address){
+        this.address = address;
+    }
+    public String getAddress(){
+        return this.address;
+    }
+    public void setLandmark(String landmark){
+        this.landmark = landmark;
+    }
+    public String getLandmark(){
+        return this.landmark;
+    }
+    public void setLatitude(String latitude){
+        this.latitude = latitude;
+    }
+    public String getLatitude(){
+        return this.latitude;
+    }
+    public void setLongitude(String longitude){
+        this.longitude = longitude;
+    }
+    public String getLongitude(){
+        return this.longitude;
+    }
+}
+
+==================================
+package ;
+public class Detail
+{
+    private String cost;
+
+    private String funded_by;
+
+    private String dpr_file_name;
+
+    public void setCost(String cost){
+        this.cost = cost;
+    }
+    public String getCost(){
+        return this.cost;
+    }
+    public void setFunded_by(String funded_by){
+        this.funded_by = funded_by;
+    }
+    public String getFunded_by(){
+        return this.funded_by;
+    }
+    public void setDpr_file_name(String dpr_file_name){
+        this.dpr_file_name = dpr_file_name;
+    }
+    public String getDpr_file_name(){
+        return this.dpr_file_name;
+    }
+}
+
+==================================
+package ;
+import java.util.ArrayList;
+import java.util.List;
+public class Projects
+{
+    private String projectTypeId;
+
+    private String projectCost;
+
+    private String centralShare;
+
+    private String stateShare;
+
+    private String otherShare;
+
+    private Plant_info plant_info;
+
+    private Address address;
+
+    private List<String> plant_video_image;
+
+    private List<String> ulb;
+
+    private Detail detail;
+
+    public void setProjectTypeId(String projectTypeId){
+        this.projectTypeId = projectTypeId;
+    }
+    public String getProjectTypeId(){
+        return this.projectTypeId;
+    }
+    public void setProjectCost(String projectCost){
+        this.projectCost = projectCost;
+    }
+    public String getProjectCost(){
+        return this.projectCost;
+    }
+    public void setCentralShare(String centralShare){
+        this.centralShare = centralShare;
+    }
+    public String getCentralShare(){
+        return this.centralShare;
+    }
+    public void setStateShare(String stateShare){
+        this.stateShare = stateShare;
+    }
+    public String getStateShare(){
+        return this.stateShare;
+    }
+    public void setOtherShare(String otherShare){
+        this.otherShare = otherShare;
+    }
+    public String getOtherShare(){
+        return this.otherShare;
+    }
+    public void setPlant_info(Plant_info plant_info){
+        this.plant_info = plant_info;
+    }
+    public Plant_info getPlant_info(){
+        return this.plant_info;
+    }
+    public void setAddress(Address address){
+        this.address = address;
+    }
+    public Address getAddress(){
+        return this.address;
+    }
+    public void setPlant_video_image(List<String> plant_video_image){
+        this.plant_video_image = plant_video_image;
+    }
+    public List<String> getPlant_video_image(){
+        return this.plant_video_image;
+    }
+    public void setUlb(List<String> ulb){
+        this.ulb = ulb;
+    }
+    public List<String> getUlb(){
+        return this.ulb;
+    }
+    public void setDetail(Detail detail){
+        this.detail = detail;
+    }
+    public Detail getDetail(){
+        return this.detail;
+    }
+}
+
+==================================
+package ;
+import java.util.ArrayList;
+import java.util.List;
+public class Components
+{
+    private String componentId;
+
+    private String componentName;
+
+    private String projectCost;
+
+    private String centralShare;
+
+    private String stateShare;
+
+    private String otherShare;
+
+    private String unit;
+
+    private String firstInstallment;
+
+    private String bothInstallment;
+
+    private String actionPlanDocumentURL;
+
+    private String shpcDocumentURL;
+
+    private String dateTime;
+
+    private String componentStatus;
+
+    private List<Projects> projects;
+
+    public void setComponentId(String componentId){
+        this.componentId = componentId;
+    }
+    public String getComponentId(){
+        return this.componentId;
+    }
+    public void setComponentName(String componentName){
+        this.componentName = componentName;
+    }
+    public String getComponentName(){
+        return this.componentName;
+    }
+    public void setProjectCost(String projectCost){
+        this.projectCost = projectCost;
+    }
+    public String getProjectCost(){
+        return this.projectCost;
+    }
+    public void setCentralShare(String centralShare){
+        this.centralShare = centralShare;
+    }
+    public String getCentralShare(){
+        return this.centralShare;
+    }
+    public void setStateShare(String stateShare){
+        this.stateShare = stateShare;
+    }
+    public String getStateShare(){
+        return this.stateShare;
+    }
+    public void setOtherShare(String otherShare){
+        this.otherShare = otherShare;
+    }
+    public String getOtherShare(){
+        return this.otherShare;
+    }
+    public void setUnit(String unit){
+        this.unit = unit;
+    }
+    public String getUnit(){
+        return this.unit;
+    }
+    public void setFirstInstallment(String firstInstallment){
+        this.firstInstallment = firstInstallment;
+    }
+    public String getFirstInstallment(){
+        return this.firstInstallment;
+    }
+    public void setBothInstallment(String bothInstallment){
+        this.bothInstallment = bothInstallment;
+    }
+    public String getBothInstallment(){
+        return this.bothInstallment;
+    }
+    public void setActionPlanDocumentURL(String actionPlanDocumentURL){
+        this.actionPlanDocumentURL = actionPlanDocumentURL;
+    }
+    public String getActionPlanDocumentURL(){
+        return this.actionPlanDocumentURL;
+    }
+    public void setShpcDocumentURL(String shpcDocumentURL){
+        this.shpcDocumentURL = shpcDocumentURL;
+    }
+    public String getShpcDocumentURL(){
+        return this.shpcDocumentURL;
+    }
+    public void setDateTime(String dateTime){
+        this.dateTime = dateTime;
+    }
+    public String getDateTime(){
+        return this.dateTime;
+    }
+    public void setComponentStatus(String componentStatus){
+        this.componentStatus = componentStatus;
+    }
+    public String getComponentStatus(){
+        return this.componentStatus;
+    }
+    public void setProjects(List<Projects> projects){
+        this.projects = projects;
+    }
+    public List<Projects> getProjects(){
+        return this.projects;
+    }
+}
+
+==================================
+package ;
+import java.util.ArrayList;
+import java.util.List;
+public class Root
+{
+    private String proposalId;
+
+    private String dateReceive;
+
+    private String stateName;
+
+    private String totalProposalCost;
+
+    private String totalCentralShare;
+
+    private String totalStateShare;
+
+    private String totalOtherShare;
+
+    private String amountApproved;
+
+    private String proposalDocumentURL;
+
+    private String shpcDocumentURL;
+
+    private String dateLastUpdate;
+
+    private String proposalStatus;
+
+    private List<Components> components;
+
+    public void setProposalId(String proposalId){
+        this.proposalId = proposalId;
+    }
+    public String getProposalId(){
+        return this.proposalId;
+    }
+    public void setDateReceive(String dateReceive){
+        this.dateReceive = dateReceive;
+    }
+    public String getDateReceive(){
+        return this.dateReceive;
+    }
+    public void setStateName(String stateName){
+        this.stateName = stateName;
+    }
+    public String getStateName(){
+        return this.stateName;
+    }
+    public void setTotalProposalCost(String totalProposalCost){
+        this.totalProposalCost = totalProposalCost;
+    }
+    public String getTotalProposalCost(){
+        return this.totalProposalCost;
+    }
+    public void setTotalCentralShare(String totalCentralShare){
+        this.totalCentralShare = totalCentralShare;
+    }
+    public String getTotalCentralShare(){
+        return this.totalCentralShare;
+    }
+    public void setTotalStateShare(String totalStateShare){
+        this.totalStateShare = totalStateShare;
+    }
+    public String getTotalStateShare(){
+        return this.totalStateShare;
+    }
+    public void setTotalOtherShare(String totalOtherShare){
+        this.totalOtherShare = totalOtherShare;
+    }
+    public String getTotalOtherShare(){
+        return this.totalOtherShare;
+    }
+    public void setAmountApproved(String amountApproved){
+        this.amountApproved = amountApproved;
+    }
+    public String getAmountApproved(){
+        return this.amountApproved;
+    }
+    public void setProposalDocumentURL(String proposalDocumentURL){
+        this.proposalDocumentURL = proposalDocumentURL;
+    }
+    public String getProposalDocumentURL(){
+        return this.proposalDocumentURL;
+    }
+    public void setShpcDocumentURL(String shpcDocumentURL){
+        this.shpcDocumentURL = shpcDocumentURL;
+    }
+    public String getShpcDocumentURL(){
+        return this.shpcDocumentURL;
+    }
+    public void setDateLastUpdate(String dateLastUpdate){
+        this.dateLastUpdate = dateLastUpdate;
+    }
+    public String getDateLastUpdate(){
+        return this.dateLastUpdate;
+    }
+    public void setProposalStatus(String proposalStatus){
+        this.proposalStatus = proposalStatus;
+    }
+    public String getProposalStatus(){
+        return this.proposalStatus;
+    }
+    public void setComponents(List<Components> components){
+        this.components = components;
+    }
+    public List<Components> getComponents(){
+        return this.components;
+    }
+}
+
