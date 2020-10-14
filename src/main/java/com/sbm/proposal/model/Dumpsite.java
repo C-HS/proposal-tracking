@@ -1,15 +1,11 @@
 package com.sbm.proposal.model;
 
-import java.util.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -23,13 +19,13 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 @Entity
-@Table(name = "DumpsiteRedemption")
-public class DumpsiteRedemption {
+@Table(name = "Dumpsite")
+public class Dumpsite {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "dumpsite_redemption_id")
-	private long dumpsiteRedemptionId;
+	@Column(name = "dumpsite_id")
+	private long dumpsiteId;
 	
 	@Column(name = "project_id")
 	private long projectId;
@@ -44,16 +40,12 @@ public class DumpsiteRedemption {
 	private String area;
 	
 	@Column(name = "year_of_start")
-	private String yearOfStart;
+	private String year_of_start;
 	
 	@Column(name = "height")
 	private String height;
 	
-	@Column(name = "date_time")
-	@Temporal(TemporalType.TIMESTAMP)
-	private Date dateTime;
-	
-	@Column(name = "dumpsite_redemption_status")
-	private String dumpsiteRedemptionStatus;
+	@Column(name = "dumpsite_status")
+	private String dumpsiteStatus;
 
 }

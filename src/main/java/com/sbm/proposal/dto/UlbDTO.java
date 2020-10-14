@@ -19,11 +19,9 @@ public class UlbDTO {
 
 	private long projectId;
 
-	private long lftdId;
+	private String ulb;
 
-	private int isGreaterThan50;
-
-	private String ulbName;
+	private int isDistanceFromLandfillGreaterThan50;;
 
 	private Date dateTime;
 

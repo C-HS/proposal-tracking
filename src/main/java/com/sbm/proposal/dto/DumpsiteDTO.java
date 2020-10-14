@@ -1,7 +1,5 @@
 package com.sbm.proposal.dto;
 
-import java.util.Date;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,10 +11,10 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class DumpsiteRedemptionDTO {
-
-	private long dumpsiteRedemptionId;
-
+public class DumpsiteDTO {
+	
+	private long dumpsiteId;
+	
 	private long projectId;
 
 	private String dumpsite;
@@ -25,11 +23,10 @@ public class DumpsiteRedemptionDTO {
 
 	private String area;
 
-	private String yearOfStart;
+	private String year_of_start;
 
 	private String height;
+	
+	private String dumpsiteStatus;
 
-	private Date dateTime;
-
-	private String dumpsiteRedemptionStatus;
 }

@@ -16,10 +16,8 @@ import lombok.ToString;
 public class ProjectDTO {
 
 	private long projectId;
-
+	
 	private long projectTypeId;
-
-	private long disposalTypeId;
 
 	private long componentId;
 
@@ -31,9 +29,14 @@ public class ProjectDTO {
 
 	private double otherShare;
 
-	private String fundedBy;
+	private String subType;
 
-	private String dprFileURL;
+	private String projectBrief;
+
+	private String fileName;
+	
+	
+	/* Water Body Start */
 
 	private int cleaningOfWater;
 
@@ -52,6 +55,11 @@ public class ProjectDTO {
 	private int cleaningArrangements;
 
 	private int trashCleanerAvailable;
+	
+	/* Water Body End */
+	
+	
+	/* Plant Info Start */
 
 	private String stateName;
 
@@ -61,15 +69,112 @@ public class ProjectDTO {
 
 	private String ward;
 
-	private String plantType;
+	private String landfillMisId;
 
-	private String subCategory;
+	private String landfillName;
 
-	private int isIntegrated;
+	private String status;
 
-	private int inputCapacityHazardous;
+	private String cost;
+	
+	private Date dateOfStart;
 
-	private int inputCapacitySanitory;
+	private String projectedYearOfOperation;
+	
+	         /* For Plant Type - Plant Processing */
+
+				private int isItIntegrated;
+
+				private String plantType;
+
+				private String subCategory;
+				
+					/* designed_input_capacity_per_day  Start */
+
+							private int cDWaste;
+
+							private String cDWasteTon;
+
+							private int domesticHazardous;
+
+							private String domesticHazardousTon;
+
+							private int sanitary;
+
+							private String sanitaryTon;
+
+							private int mixed;
+
+							private String mixedTon;
+
+							private int dry;
+
+							private String dryTon;	
+
+							private int wet;
+
+							private String wetTon;
+
+							private int rdf;
+
+							private String rdfTon;
+
+							private int sewage;
+
+							private String sewageTon;
+
+							private int faecal;
+
+							private String faecalKl;
+							
+					
+					/* designed_input_capacity_per_day  End */
+						
+							
+					/* fstp_technology_details  Start */
+
+							private String levelOfTreatement;
+
+							private String technologyUsedForPrimaryAndSecondary;
+
+							private String methodOfDisposalOfTreatedEffluent;
+
+							private int isCoTreatementOfFaecalSludgeHappening;
+							
+					/* fstp_technology_details  End */
+							
+					/* STP_technology_detail  Start */
+
+							private String technologyUsed;
+
+							private String disposalMethod;
+					
+					/* STP_technology_detail  Start */
+	
+	/* Plant Info End */
+	
+	
+	
+	/* Size And Capacity Start */
+	
+	private String areaAcre;
+
+	private String designedHeightOfTop;
+
+	private String currentHeightOfTop;
+
+	private String averageWasteWentToSlf;
+
+	private String quantityDisposedTillTateTon;
+
+	private String temporaryWasteStorageAreaAvailable;
+
+	private String temporaryWasteInspectionAreaAvailable;
+	
+	/* Size And Capacity End */
+	
+	
+	/* Address Start */
 
 	private String address;
 
@@ -78,51 +183,40 @@ public class ProjectDTO {
 	private String latitude;
 
 	private String longitude;
+	
+	/* Address End */
+	
+	
+	/* Detail Start */
 
-	private String landFillMisId;
+	private String distanceToNearestWaterBodyMeter;
 
-	private String landFillName;
+	private String distanceOfLandfillBoundryToNearestHabitationKms;
 
-	private String status;
+	private int isItLocatedOnHillSide;
+	
+	/* Detail End */
+	
+	
+	/* Feature Start */
+	private int isNonPermeableLiningSystemAvailable;
+	
+	private int isThereMechanismForLaeachateCollection;
 
-	private Date startDate;
+	private int isThereMechanismForDailyCovering;
 
-	private String projectYear;
-
-	private String area;
-
-	private String heightDesigned;
-
-	private String heightCurrent;
-
-	private String averageWaste;
-
-	private String qtyDisposed;
-
-	private String storageAreaAvailable;
-
-	private String inspectionAreaAvailable;
-
-	private String nearestWaterBody;
-
-	private String nearestHabitation;
-
-	private int isHillSide;
-
-	private int nonPermeable;
-
-	private int laeachateCollection;
-
-	private String dailyCovering;
-
-	private String quantityMonitoring;
-
-	private int isRegionalSfl;
-
-	private String brief;
-
-	private String imageUrl;
-
+	private int isGroundWaterQualityMonitoring;
+	
+	/* Feature End */
+	
+	
+	
+	/* Serving To Other ULB Start */
+	
+	private int isLandfillSharedRegionalSlf;
+	
+	/* Serving To Other ULB End */
+	
 	private Date dateCreated;
 
 	private String projectStatus;

@@ -34,14 +34,11 @@ public class Ulb {
 	@Column(name = "project_id")
 	private long projectId;
 	
-	@Column(name = "lftd_id")
-	private long lftdId;
+	@Column(name = "ulb")
+	private String ulb;
 	
-	@Column(name = "is_greater_than_50")
-	private int isGreaterThan50;
-	
-	@Column(name = "ulb_name")
-	private String ulbName;
+	@Column(name = "is_distance_from_landfill_greater_than50;")
+	private int isDistanceFromLandfillGreaterThan50;;
 	
 	@Column(name = "date_time")
 	@Temporal(TemporalType.TIMESTAMP)

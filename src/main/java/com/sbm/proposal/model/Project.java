@@ -33,9 +33,7 @@ public class Project {
 	
 	@Column(name = "project_type_id")
 	private long projectTypeId;
-	
-	@Column(name = "disposal_type_id")
-	private long disposalTypeId;
+
 	
 	@Column(name = "component_id")
 	private long componentId;
@@ -52,11 +50,18 @@ public class Project {
 	@Column(name = "other_share")
 	private double otherShare;
 	
-	@Column(name = "funded_by")
-	private String fundedBy;
 	
-	@Column(name = "dpr_file_url")
-	private String dprFileURL;
+	@Column(name = "sub_type")
+	private String subType;
+	
+	@Column(name = "project_brief")
+	private String projectBrief;
+	
+	@Column(name = "file_name")
+	private String fileName;
+	
+	
+	/* Water Body Start */
 	
 	@Column(name = "cleaning_of_water")
 	private int cleaningOfWater;
@@ -85,6 +90,11 @@ public class Project {
 	@Column(name = "trash_cleaner_available")
 	private int trashCleanerAvailable;
 	
+	/* Water Body End */
+	
+	
+	/* Plant Info Start */
+	
 	@Column(name = "state_name")
 	private String stateName;
 	
@@ -97,20 +107,154 @@ public class Project {
 	@Column(name = "ward")
 	private String ward;
 	
-	@Column(name = "plant_type")
-	private String plantType;
+	@Column(name = "landfill_mis_id")
+	private String landfillMisId;
 	
-	@Column(name = "sub_category")
-	private String subCategory;
+	@Column(name = "landfill_name")
+	private String landfillName;
 	
-	@Column(name = "is_integrated")
-	private int isIntegrated;
+	@Column(name = "status")
+	private String status;
 	
-	@Column(name = "input_capacity_hazardous")
-	private int inputCapacityHazardous;
+	@Column(name = "cost")
+	private String cost;
 	
-	@Column(name = "input_capacity_sanitory")
-	private int inputCapacitySanitory;
+	@Column(name = "date_of_start")
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date dateOfStart;
+	
+	@Column(name = "projected_year_of_operation")
+	private String projectedYearOfOperation;
+	
+	         /* For Plant Type - Plant Processing */
+	
+				@Column(name = "is_it_integrated")
+				private int isItIntegrated;
+				
+				@Column(name = "plant_type")
+				private String plantType;
+				
+				@Column(name = "sub_category")
+				private String subCategory;
+				
+					/* designed_input_capacity_per_day  Start */
+					
+							@Column(name = "C_D_Waste")
+							private int cDWaste;
+							
+							@Column(name = "C_D_Waste_ton")
+							private String cDWasteTon;
+							
+							@Column(name = "domestic_hazardous")
+							private int domesticHazardous;
+							
+							@Column(name = "domestic_hazardous_ton")
+							private String domesticHazardousTon;
+							
+							@Column(name = "sanitary")
+							private int sanitary;
+							
+							@Column(name = "sanitary_ton")
+							private String sanitaryTon;
+							
+							@Column(name = "mixed")
+							private int mixed;
+							
+							@Column(name = "mixed_ton")
+							private String mixedTon;
+							
+							@Column(name = "dry")
+							private int dry;
+							
+							@Column(name = "dry_ton")
+							private String dryTon;	
+							
+							@Column(name = "wet")
+							private int wet;
+							
+							@Column(name = "wet_ton")
+							private String wetTon;
+							
+							@Column(name = "rdf")
+							private int rdf;
+							
+							@Column(name = "rdf_ton")
+							private String rdfTon;
+							
+							@Column(name = "sewage")
+							private int sewage;
+							
+							@Column(name = "sewage_ton")
+							private String sewageTon;
+							
+							@Column(name = "faecal")
+							private int faecal;
+							
+							@Column(name = "faecal_kl")
+							private String faecalKl;
+							
+					
+					/* designed_input_capacity_per_day  End */
+						
+							
+					/* fstp_technology_details  Start */
+							
+							@Column(name = "level_of_treatement")
+							private String levelOfTreatement;
+							
+							@Column(name = "technology_used_for_primary_and_secondary")
+							private String technologyUsedForPrimaryAndSecondary;
+							
+							@Column(name = "method_of_disposal_of_treated_effluent")
+							private String methodOfDisposalOfTreatedEffluent;
+							
+							@Column(name = "is_co-treatement_of_faecal_sludge_happening")
+							private int isCoTreatementOfFaecalSludgeHappening;
+							
+					/* fstp_technology_details  End */
+							
+					/* STP_technology_detail  Start */
+							
+							@Column(name = "technology_used")
+							private String technologyUsed;
+							
+							@Column(name = "disposal_method")
+							private String disposalMethod;
+					
+					/* STP_technology_detail  Start */
+	
+	/* Plant Info End */
+	
+	
+	
+	/* Size And Capacity Start */
+	
+	@Column(name = "area_acre")
+	private String areaAcre;
+	
+	@Column(name = "designed_height_of_top")
+	private String designedHeightOfTop;
+	
+	@Column(name = "current_height_of_top")
+	private String currentHeightOfTop;
+	
+	@Column(name = "average_waste_went_to_slf")
+	private String averageWasteWentToSlf;
+	
+	@Column(name = "quantity_disposed_till_date_ton")
+	private String quantityDisposedTillTateTon;
+	
+	@Column(name = "temporary_waste_storage_area_available")
+	private String temporaryWasteStorageAreaAvailable;
+	
+	@Column(name = "temporary_waste_inspection_area_available")
+	private String temporaryWasteInspectionAreaAvailable;
+	
+	/* Size And Capacity End */
+	
+	
+	
+	/* Address Start */
 	
 	@Column(name = "address")
 	private String address;
@@ -124,72 +268,48 @@ public class Project {
 	@Column(name = "longitude")
 	private String longitude;
 	
-	@Column(name = "land_fill_mis_id")
-	private String landFillMisId;
+	/* Address End */
 	
-	@Column(name = "land_fill_name")
-	private String landFillName;
 	
-	@Column(name = "status")
-	private String status;
+	/* Detail Start */
 	
-	@Column(name = "start_date")
-	@Temporal(TemporalType.TIMESTAMP)
-	private Date startDate;
+	@Column(name = "distance_to_nearest_water_body_meter")
+	private String distanceToNearestWaterBodyMeter;
 	
-	@Column(name = "project_year")
-	private String projectYear;
+	@Column(name = "distance_of_landfill_boundry_to_nearest_habitation_kms")
+	private String distanceOfLandfillBoundryToNearestHabitationKms;
 	
-	@Column(name = "area")
-	private String area;
+	@Column(name = "is_it_located_on_hill_side")
+	private int isItLocatedOnHillSide;
 	
-	@Column(name = "height_designed")
-	private String heightDesigned;
+	/* Detail End */
 	
-	@Column(name = "height_current")
-	private String heightCurrent;
 	
-	@Column(name = "average_waste")
-	private String averageWaste;
+	/* Feature Start */
+	@Column(name = "is_non_permeable_lining_system_available")
+	private int isNonPermeableLiningSystemAvailable;
 	
-	@Column(name = "qty_disposed")
-	private String qtyDisposed;
+	@Column(name = "is_there_mechanism_for_laeachate_collection")
+	private int isThereMechanismForLaeachateCollection;
 	
-	@Column(name = "storage_area_available")
-	private String storageAreaAvailable;
+	@Column(name = "is_there_mechanism_for_daily_covering")
+	private int isThereMechanismForDailyCovering;
 	
-	@Column(name = "inspection_area_available")
-	private String inspectionAreaAvailable;
+	@Column(name = "is_ground_water_quality_monitoring")
+	private int isGroundWaterQualityMonitoring;
 	
-	@Column(name = "nearest_water_body")
-	private String nearestWaterBody;
+	/* Feature End */
 	
-	@Column(name = "nearest_habitation")
-	private String nearestHabitation;
 	
-	@Column(name = "is_hill_side")
-	private int isHillSide;
 	
-	@Column(name = "non_permeable")
-	private int nonPermeable;
+	/* Serving To Other ULB Start */
 	
-	@Column(name = "laeachate_collection")
-	private int laeachateCollection;
+	@Column(name = "is_landfill_shared_regional_slf")
+	private int isLandfillSharedRegionalSlf;
 	
-	@Column(name = "daily_covering")
-	private String dailyCovering;
+	/* Serving To Other ULB End */
 	
-	@Column(name = "quantity_monitoring")
-	private String quantityMonitoring;
 	
-	@Column(name = "is_regional_sfl")
-	private int isRegionalSfl;
-	
-	@Column(name = "brief")
-	private String brief;
-	
-	@Column(name = "image_url")
-	private String imageUrl;
 	
 	@Column(name = "date_created")
 	@Temporal(TemporalType.TIMESTAMP)

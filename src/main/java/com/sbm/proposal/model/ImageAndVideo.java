@@ -34,15 +34,12 @@ public class ImageAndVideo {
 	@Column(name = "project_id")
 	private long projectId;
 	
-	@Column(name = "lftd_id")
-	private long lftdId;
+	@Column(name = "file_name")
+	private String fileName;
 	
-	@Column(name = "file_url")
-	private String file_url;
-	
-	@Column(name = "date_uploaded")
+	@Column(name = "date_time")
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date dateUploaded;
+	private Date dateTime;
 	
 	@Column(name = "image_video_status")
 	private String imageVideoStatus;

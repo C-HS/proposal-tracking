@@ -19,11 +19,9 @@ public class ImageAndVideoDTO {
 
 	private long projectId;
 
-	private long lftdId;
-
-	private String file_url;
-
-	private Date dateUploaded;
+	private String fileName;
+	
+	private Date dateTime;
 
 	private String imageVideoStatus;
 
