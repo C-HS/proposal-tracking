@@ -63,7 +63,7 @@
 						"level_of_treatement": "",
 						"technology_used_for_primary_and_secondary": "",
 						"method_of_disposal_of_treated_effluent": "",
-						"is_co-treatement_of_faecal_sludge_happening": "Yes OR No"
+						"is_co_treatement_of_faecal_sludge_happening": "Yes OR No"
 					},
 					"STP_technology_detail": {
 						"technology_used": "",

@@ -5,7 +5,6 @@ com\sbm\proposal\service\impl\ProjectServiceImpl.class
 com\sbm\proposal\repository\ProposalRepository.class
 com\sbm\proposal\dto\ProjectTypeDTO.class
 com\sbm\proposal\repository\ProjectTypeRepository.class
-com\sbm\proposal\dto\DumpsiteRedemptionDTO.class
 com\sbm\proposal\service\ProjectTypeService.class
 com\sbm\proposal\model\Ulb.class
 com\sbm\proposal\service\impl\ImageAndVideoServiceImpl.class
@@ -18,7 +17,6 @@ com\sbm\proposal\model\Proposal.class
 com\sbm\proposal\repository\ImageAndVideoRepository.class
 com\sbm\proposal\repository\ProjectRepository.class
 com\sbm\proposal\model\Project.class
-com\sbm\proposal\model\DumpsiteRedemption.class
 com\sbm\proposal\service\impl\ProposalServiceImpl.class
 com\sbm\proposal\dto\UlbDTO.class
 com\sbm\proposal\service\impl\ProjectTypeServiceImpl.class
@@ -28,12 +26,9 @@ com\sbm\proposal\Application.class
 com\sbm\proposal\repository\ComponentRepository.class
 com\sbm\proposal\config\WebMvcConfig.class
 com\sbm\proposal\repository\UlbRepository.class
-com\sbm\proposal\repository\DumpsiteRedemptionRepository.class
 com\sbm\proposal\dto\ComponentDTO.class
 com\sbm\proposal\service\ImageAndVideoService.class
 com\sbm\proposal\dto\ImageAndVideoDTO.class
-com\sbm\proposal\service\DumpsiteRedemptionService.class
 com\sbm\proposal\model\Component.class
 com\sbm\proposal\service\impl\ComponentServiceImpl.class
 com\sbm\proposal\model\ImageAndVideo.class
-com\sbm\proposal\service\impl\DumpsiteRedemptionServiceImpl.class

@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "e9329ba8-620c-40ee-8734-f8d3bc035971",
+		"name": "sbm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createProposal ProjectType_is_Collection & Transportation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"proposalId\": \"aaaa\",\r\n\t\"dateReceive\": \"bbbb\",\r\n\t\"stateName\": \"bbbbbb\",\r\n\t\"totalProposalCost\": \"ddddd\",\r\n\t\"totalCentralShare\": \"eeeee\",\r\n\t\"totalStateShare\": \"ffff\",\r\n\t\"totalOtherShare\": \"ggggg\",\r\n\t\"amountApproved\": \"hhhhh\",\r\n\t\"proposalDocumentURL\": \"iiiiii\",\r\n\t\"shpcDocumentURL\": \"jjjjj\",\r\n\t\"dateLastUpdate\": \"kkkkk\",\r\n\t\"proposalStatus\": \"lllll\",\r\n\t\"components\": [{\r\n\t\t\"componentId\": \"mmmmm\",\r\n\t\t\"componentName\": \"nnnnn\",\r\n\t\t\"projectCost\": \"ooooo\",\r\n\t\t\"centralShare\": \"ppppp\",\r\n\t\t\"stateShare\": \"qqqqq\",\r\n\t\t\"otherShare\": \"rrrrr\",\r\n\t\t\"unit\": \"sssss\",\r\n\t\t\"firstInstallment\": \"ttttt\",\r\n\t\t\"bothInstallment\": \"uuuuu\",\r\n\t\t\"actionPlanDocumentURL\": \"vvvvvv\",\r\n\t\t\"shpcDocumentURL\": \"wwwww\",\r\n\t\t\"dateTime\": \"xxxxx\",\r\n\t\t\"componentStatus\": \"yyyyy\",\r\n\t\t\"projects\": [{\r\n\t\t\t\"projectTypeId\": \"Collection & Transportation\",\r\n\t\t\t\"projectCost\": \"11111\",\r\n\t\t\t\"centralShare\": \"22222\",\r\n\t\t\t\"stateShare\": \"33333\",\r\n\t\t\t\"otherShare\": \"44444\",\r\n\t\t\t\"waterbody\": {\r\n\t\t\t\t\"cleaningOfWater\": \"Yes OR No\",\r\n\t\t\t\t\"noOfToilets\": \"5555\",\r\n\t\t\t\t\"solidWasteVisible\": \"Yes OR No\",\r\n\t\t\t\t\"openDumpSitePresent\": \"Yes OR No\",\r\n\t\t\t\t\"gvpPresent\": \"Yes OR No\",\r\n\t\t\t\t\"cleanlinessDisplayed\": \"Yes OR No\",\r\n\t\t\t\t\"adequateTwin\": \"Yes OR No\",\r\n\t\t\t\t\"cleaningArrangements\": \"Yes OR No\",\r\n\t\t\t\t\"trashCleanerAvailable\": \"Yes OR No\"\r\n\t\t\t}\r\n\t\t}]\r\n\t},\r\n    {\r\n\t\t\"componentId\": \"mmmmm\",\r\n\t\t\"componentName\": \"nnnnn\",\r\n\t\t\"projectCost\": \"ooooo\",\r\n\t\t\"centralShare\": \"ppppp\",\r\n\t\t\"stateShare\": \"qqqqq\",\r\n\t\t\"otherShare\": \"rrrrr\",\r\n\t\t\"unit\": \"sssss\",\r\n\t\t\"firstInstallment\": \"ttttt\",\r\n\t\t\"bothInstallment\": \"uuuuu\",\r\n\t\t\"actionPlanDocumentURL\": \"vvvvvv\",\r\n\t\t\"shpcDocumentURL\": \"wwwww\",\r\n\t\t\"dateTime\": \"xxxxx\",\r\n\t\t\"componentStatus\": \"yyyyy\",\r\n\t\t\"projects\": [{\r\n\t\t\t\"projectTypeId\": \"Collection & Transportation\",\r\n\t\t\t\"projectCost\": \"11111\",\r\n\t\t\t\"centralShare\": \"22222\",\r\n\t\t\t\"stateShare\": \"33333\",\r\n\t\t\t\"otherShare\": \"44444\",\r\n\t\t\t\"waterbody\": {\r\n\t\t\t\t\"cleaningOfWater\": \"Yes OR No\",\r\n\t\t\t\t\"noOfToilets\": \"5555\",\r\n\t\t\t\t\"solidWasteVisible\": \"Yes OR No\",\r\n\t\t\t\t\"openDumpSitePresent\": \"Yes OR No\",\r\n\t\t\t\t\"gvpPresent\": \"Yes OR No\",\r\n\t\t\t\t\"cleanlinessDisplayed\": \"Yes OR No\",\r\n\t\t\t\t\"adequateTwin\": \"Yes OR No\",\r\n\t\t\t\t\"cleaningArrangements\": \"Yes OR No\",\r\n\t\t\t\t\"trashCleanerAvailable\": \"Yes OR No\"\r\n\t\t\t}\r\n\t\t}]\r\n\t}]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/proposal/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"proposal",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createProposal ProjectType_is_Disposal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"proposalId\": \"\",\r\n\t\"dateReceive\": \"\",\r\n\t\"stateName\": \"\",\r\n\t\"totalProposalCost\": \"\",\r\n\t\"totalCentralShare\": \"\",\r\n\t\"totalStateShare\": \"\",\r\n\t\"totalOtherShare\": \"\",\r\n\t\"amountApproved\": \"\",\r\n\t\"proposalDocumentURL\": \"\",\r\n\t\"shpcDocumentURL\": \"\",\r\n\t\"dateLastUpdate\": \"\",\r\n\t\"proposalStatus\": \"\",\r\n\t\"components\": [{\r\n\t\t\"componentId\": \"\",\r\n\t\t\"componentName\": \"\",\r\n\t\t\"projectCost\": \"\",\r\n\t\t\"centralShare\": \"\",\r\n\t\t\"stateShare\": \"\",\r\n\t\t\"otherShare\": \"\",\r\n\t\t\"unit\": \"\",\r\n\t\t\"firstInstallment\": \"\",\r\n\t\t\"bothInstallment\": \"\",\r\n\t\t\"actionPlanDocumentURL\": \"\",\r\n\t\t\"shpcDocumentURL\": \"\",\r\n\t\t\"dateTime\": \"\",\r\n\t\t\"componentStatus\": \"\",\r\n\t\t\"projects\": [{\r\n\t\t\t\"projectTypeId\": \"Disposal\",\r\n\t\t\t\"projectCost\": \"\",\r\n\t\t\t\"centralShare\": \"\",\r\n\t\t\t\"stateShare\": \"\",\r\n\t\t\t\"otherShare\": \"\",\r\n\t\t\t\"subType\": \"\",\r\n\t\t\t\"project_brief\": \"\",\r\n\t\t\t\"file_name\": \"\",\r\n\t\t\t\"plant_info\": {\r\n\t\t\t\t\"State\": \"\",\r\n\t\t\t\t\"district\": \"\",\r\n\t\t\t\t\"city_ulb\": \"\",\r\n\t\t\t\t\"ward\": \"\",\r\n\t\t\t\t\"landfill_mis_id\": \"\",\r\n\t\t\t\t\"landfill_name\": \"\",\r\n\t\t\t\t\"status\": \"\",\r\n\t\t\t\t\"cost\": \"\",\r\n\t\t\t\t\"date_of_start\": \"\",\r\n\t\t\t\t\"projected_year_of_operation\": \"\"\r\n\t\t\t},\r\n\t\t\t\"size_and_capacity\": {\r\n\t\t\t\t\"area_acre\": \"\",\r\n\t\t\t\t\"designed_height_of_top\": \"\",\r\n\t\t\t\t\"current_height_of_top\": \"\",\r\n\t\t\t\t\"average_waste_went_to_slf\": \"\",\r\n\t\t\t\t\"quantity_disposed_till_date_ton\": \"\",\r\n\t\t\t\t\"temporary_waste_storage_area_awailable\": \"Yes OR No\",\r\n\t\t\t\t\"temporary_waste_inspection_area_awailable\": \"Yes OR No\"\r\n\t\t\t},\r\n\t\t\t\"address\": {\r\n\t\t\t\t\"address\": \"\",\r\n\t\t\t\t\"landmark\": \"\",\r\n\t\t\t\t\"latitude\": \"\",\r\n\t\t\t\t\"longitude\": \"\"\r\n\t\t\t},\r\n\t\t\t\"plant_video_image\": [\"file_name1\", \"file_name2\", \"file_namen\"],\r\n\t\t\t\"detail\": {\r\n\t\t\t\t\"distance_to_nearest_water_body_meter\": \"\",\r\n\t\t\t\t\"distance_of_landfill_boundry_to_nearest_habitation_kms\": \"\",\r\n\t\t\t\t\"is_it_located_on_hill_side\": \"Yes Or No\"\r\n\t\t\t},\r\n\t\t\t\"features\": {\r\n\t\t\t\t\"is_non_permeable_lining_system_available\": \"Yes Or No\",\r\n\t\t\t\t\"is_there_mechanism_for_laeachate_collection\": \"Yes Or No\",\r\n\t\t\t\t\"is_there_mechanism_for_daily_covering\": \"Yes Or No\",\r\n\t\t\t\t\"is_ground_water_quality_monitoring\": \"Yes Or No\"\r\n\t\t\t},\r\n\t\t\t\"serving_to_other_ulb\": {\r\n\t\t\t\t\"is_landfill_shared_regional_slf\": \"Yes Or No\",\r\n\t\t\t\t\"ulb\": [{\r\n\t\t\t\t\t\"ulb\": \"ULB1\",\r\n\t\t\t\t\t\"is_distance_from_landfill_greater_than50\": \"Yes Or No\"\r\n\t\t\t\t}, {\r\n\t\t\t\t\t\"ulb\": \"ULB2\",\r\n\t\t\t\t\t\"is_distance_from_landfill_greater_than50\": \"Yes Or No\"\r\n\t\t\t\t}]\r\n\t\t\t},\r\n\t\t\t\"dumpsites\": [{\r\n\t\t\t\t\"dumpsite\": \"1\",\r\n\t\t\t\t\"quantity\": \"\",\r\n\t\t\t\t\"area\": \"\",\r\n\t\t\t\t\"year_of_start\": \"\",\r\n\t\t\t\t\"height\": \"\"\r\n\t\t\t}, {\r\n\t\t\t\t\"dumpsite\": \"2\",\r\n\t\t\t\t\"quantity\": \"\",\r\n\t\t\t\t\"area\": \"\",\r\n\t\t\t\t\"year_of_start\": \"\",\r\n\t\t\t\t\"height\": \"\"\r\n\t\t\t}]\r\n\t\t}]\r\n\t}]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/proposal/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"proposal",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createProposal ProjectType_is_Plant Processing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"proposalId\": \"\",\r\n\t\"dateReceive\": \"\",\r\n\t\"stateName\": \"\",\r\n\t\"totalProposalCost\": \"\",\r\n\t\"totalCentralShare\": \"\",\r\n\t\"totalStateShare\": \"\",\r\n\t\"totalOtherShare\": \"\",\r\n\t\"amountApproved\": \"\",\r\n\t\"proposalDocumentURL\": \"\",\r\n\t\"shpcDocumentURL\": \"\",\r\n\t\"dateLastUpdate\": \"\",\r\n\t\"proposalStatus\": \"\",\r\n\t\"components\": [{\r\n\t\t\"componentId\": \"\",\r\n\t\t\"componentName\": \"\",\r\n\t\t\"projectCost\": \"\",\r\n\t\t\"centralShare\": \"\",\r\n\t\t\"stateShare\": \"\",\r\n\t\t\"otherShare\": \"\",\r\n\t\t\"unit\": \"\",\r\n\t\t\"firstInstallment\": \"\",\r\n\t\t\"bothInstallment\": \"\",\r\n\t\t\"actionPlanDocumentURL\": \"\",\r\n\t\t\"shpcDocumentURL\": \"\",\r\n\t\t\"dateTime\": \"\",\r\n\t\t\"componentStatus\": \"\",\r\n\t\t\"projects\": [{\r\n\t\t\t\"projectTypeId\": \"Processing Plant\",\r\n\t\t\t\"projectCost\": \"\",\r\n\t\t\t\"centralShare\": \"\",\r\n\t\t\t\"stateShare\": \"\",\r\n\t\t\t\"otherShare\": \"\",\r\n\t\t\t\"plant_info\": {\r\n\t\t\t\t\"State\": \"\",\r\n\t\t\t\t\"district\": \"\",\r\n\t\t\t\t\"city_ulb\": \"\",\r\n\t\t\t\t\"ward\": \"\",\r\n\t\t\t\t\"is_it_integrated\": \"Yes OR No\",\r\n\t\t\t\t\"status\": \"\",\r\n\t\t\t\t\"plant_type\": \"\",\r\n\t\t\t\t\"sub_category\": \"\",\r\n\t\t\t\t\"designed_input_capacity_per_day\": {\r\n\t\t\t\t\t\"C_D_Waste\": \"Yes OR No\",\r\n\t\t\t\t\t\"C_D_Waste_ton\": \"\",\r\n\t\t\t\t\t\"domestic_hazardous\": \"Yes OR No\",\r\n\t\t\t\t\t\"domestic_hazardous_ton\": \"\",\r\n\t\t\t\t\t\"sanitary\": \"Yes OR No\",\r\n\t\t\t\t\t\"sanitary_ton\": \"\",\r\n\t\t\t\t\t\"mixed\": \"Yes OR No\",\r\n\t\t\t\t\t\"mixed_ton\": \"\",\r\n\t\t\t\t\t\"dry\": \"Yes OR No\",\r\n\t\t\t\t\t\"dry_ton\": \"\",\r\n\t\t\t\t\t\"wet\": \"Yes OR No\",\r\n\t\t\t\t\t\"wet_ton\": \"\",\r\n\t\t\t\t\t\"rdf\": \"Yes OR No\",\r\n\t\t\t\t\t\"rdf_ton\": \"\",\r\n\t\t\t\t\t\"sewage\": \"Yes OR No\",\r\n\t\t\t\t\t\"sewage_ton\": \"\",\r\n\t\t\t\t\t\"faecal\": \"Yes OR No\",\r\n\t\t\t\t\t\"faecal_kl\": \"\",\r\n\t\t\t\t\t\"fstp_technology_details\": {\r\n\t\t\t\t\t\t\"level_of_treatement\": \"\",\r\n\t\t\t\t\t\t\"technology_used_for_primary_and_secondary\": \"\",\r\n\t\t\t\t\t\t\"method_of_disposal_of_treated_effluent\": \"\",\r\n\t\t\t\t\t\t\"is_co_treatement_of_faecal_sludge_happening\": \"Yes OR No\"\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"STP_technology_detail\": {\r\n\t\t\t\t\t\t\"technology_used\": \"\",\r\n\t\t\t\t\t\t\"disposal_method\": \"\"\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t\"address\": {\r\n\t\t\t\t\"address\": \"\",\r\n\t\t\t\t\"landmark\": \"\",\r\n\t\t\t\t\"latitude\": \"\",\r\n\t\t\t\t\"longitude\": \"\"\r\n\t\t\t},\r\n\t\t\t\"plant_video_image\": [\"file_name1\", \"file_name2\", \"file_namen\"],\r\n\t\t\t\"ulb\": [\"ulb1\", \"ulb2\", \"ulbn\"],\r\n\t\t\t\"detail\": {\r\n\t\t\t\t\"cost\": \"\",\r\n\t\t\t\t\"funded_by\": \"\",\r\n\t\t\t\t\"dpr_file_name\": \"\"\r\n\t\t\t}\r\n\t\t}]\r\n\t}]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/proposal/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"proposal",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
