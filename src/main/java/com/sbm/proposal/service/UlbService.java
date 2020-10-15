@@ -5,7 +5,7 @@ import com.sbm.proposal.model.Ulb;
 
 public interface UlbService {
 
-	public void addUlb(Ulb ulb);
+	public long addUlb(Ulb ulb);
 	public UlbDTO updateUlb(Ulb ulb);
 	public UlbDTO getUlbByID(String ulbId);
 	public void deleteUlb(Ulb ulb);

@@ -21,8 +21,8 @@ public class UlbDTO {
 
 	private String ulb;
 
-	private int isDistanceFromLandfillGreaterThan50;;
-
+	private int ulbDistanceAboveFifty;
+	
 	private Date dateTime;
 
 	private String ulbStatus;

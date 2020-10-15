@@ -5,7 +5,7 @@ import com.sbm.proposal.model.Component;
 
 public interface ComponentService {
 
-	public void addComponent(Component component);
+	public long addComponent(Component component);
 	public ComponentDTO updateComponent(Component component);
 	public ComponentDTO getComponentByID(String componentId);
 	public void deleteComponent(Component component);

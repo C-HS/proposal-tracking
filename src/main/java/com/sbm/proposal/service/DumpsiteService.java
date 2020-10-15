@@ -5,7 +5,7 @@ import com.sbm.proposal.model.Dumpsite;
 
 public interface DumpsiteService {
 
-	public void addDumpsite(Dumpsite dumpsite);
+	public long addDumpsite(Dumpsite dumpsite);
 	public DumpsiteDTO updateDumpsite(Dumpsite dumpsite);
 	public DumpsiteDTO getDumpsiteByID(String dumpsiteId);
 	public void deleteDumpsite(Dumpsite dumpsite);

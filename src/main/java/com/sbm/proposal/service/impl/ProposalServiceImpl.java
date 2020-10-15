@@ -17,8 +17,22 @@ public class ProposalServiceImpl implements ProposalService{
 	@Autowired ModelMapper modelMapper;
 	
 	@Override
-	public void addProposal(Proposal proposal) {
-		// TODO Auto-generated method stub
+	public long addProposal(Proposal proposal) {
+
+		try
+		{
+			ProposalDTO proposalDTO =modelMapper.map(proposalRepository.save(proposal), ProposalDTO.class);
+			
+			return proposalDTO.getId();
+		}
+		catch(org.springframework.dao.DataIntegrityViolationException e)
+		{
+			return -1;			
+		}
+		catch(Exception e)
+		{
+			return -2;	
+		}
 		
 	}
 

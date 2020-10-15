@@ -37,8 +37,9 @@ public class Ulb {
 	@Column(name = "ulb")
 	private String ulb;
 	
-	@Column(name = "is_distance_from_landfill_greater_than50;")
-	private int isDistanceFromLandfillGreaterThan50;;
+	@Column(name = "ulb_distance_above_fifty")
+	private int ulbDistanceAboveFifty;
+	
 	
 	@Column(name = "date_time")
 	@Temporal(TemporalType.TIMESTAMP)

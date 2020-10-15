@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.sbm.proposal.dto.DumpsiteDTO;
+import com.sbm.proposal.dto.UlbDTO;
 import com.sbm.proposal.model.Dumpsite;
 import com.sbm.proposal.repository.DumpsiteRepository;
 import com.sbm.proposal.service.DumpsiteService;
@@ -17,8 +18,22 @@ public class DumpsiteServiceImpl implements DumpsiteService{
 	@Autowired ModelMapper modelMapper;
 
 	@Override
-	public void addDumpsite(Dumpsite dumpsite) {
-		// TODO Auto-generated method stub
+	public long addDumpsite(Dumpsite dumpsite) {
+
+		try
+		{
+			DumpsiteDTO dumpsiteDTO =modelMapper.map(dumpsiteRepository.save(dumpsite), DumpsiteDTO.class);
+			
+			return dumpsiteDTO.getDumpsiteId();
+		}
+		catch(org.springframework.dao.DataIntegrityViolationException e)
+		{
+			return -1;			
+		}
+		catch(Exception e)
+		{
+			return -2;	
+		}
 		
 	}
 

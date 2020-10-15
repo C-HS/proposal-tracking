@@ -4,6 +4,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.sbm.proposal.dto.ComponentDTO;
 import com.sbm.proposal.dto.ImageAndVideoDTO;
 import com.sbm.proposal.model.ImageAndVideo;
 import com.sbm.proposal.repository.ImageAndVideoRepository;
@@ -16,8 +17,23 @@ public class ImageAndVideoServiceImpl implements ImageAndVideoService{
 	@Autowired ModelMapper modelMapper;	
 	
 	@Override
-	public void addImageAndVideo(ImageAndVideo imageAndVideo) {
-		// TODO Auto-generated method stub
+	public long addImageAndVideo(ImageAndVideo imageAndVideo) {
+
+		try
+		{
+			ImageAndVideoDTO imageAndVideoDTO =modelMapper.map(imageAndVideoRepository.save(imageAndVideo), ImageAndVideoDTO.class);
+			
+			return imageAndVideoDTO.getImageVideoId();
+		}
+		catch(org.springframework.dao.DataIntegrityViolationException e)
+		{
+			return -1;			
+		}
+		catch(Exception e)
+		{
+			return -2;	
+		}
+		
 		
 	}
 

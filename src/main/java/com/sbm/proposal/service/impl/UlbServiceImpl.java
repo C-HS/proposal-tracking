@@ -4,6 +4,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.sbm.proposal.dto.ComponentDTO;
 import com.sbm.proposal.dto.UlbDTO;
 import com.sbm.proposal.model.Ulb;
 import com.sbm.proposal.repository.UlbRepository;
@@ -16,8 +17,23 @@ public class UlbServiceImpl implements UlbService {
 	@Autowired ModelMapper modelMapper;
 
 	@Override
-	public void addUlb(Ulb ulb) {
-		// TODO Auto-generated method stub
+	public long addUlb(Ulb ulb) {
+
+		try
+		{
+			UlbDTO ulbDTO =modelMapper.map(ulbRepository.save(ulb), UlbDTO.class);
+			
+			return ulbDTO.getUlbId();
+		}
+		catch(org.springframework.dao.DataIntegrityViolationException e)
+		{
+			return -1;			
+		}
+		catch(Exception e)
+		{
+			return -2;	
+		}
+		
 		
 	}
 

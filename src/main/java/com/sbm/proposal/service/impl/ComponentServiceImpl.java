@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.sbm.proposal.dto.ComponentDTO;
+import com.sbm.proposal.dto.ProposalDTO;
 import com.sbm.proposal.model.Component;
 import com.sbm.proposal.repository.ComponentRepository;
 import com.sbm.proposal.service.ComponentService;
@@ -17,8 +18,22 @@ public class ComponentServiceImpl implements ComponentService{
 	@Autowired ModelMapper modelMapper;
 
 	@Override
-	public void addComponent(Component component) {
-		// TODO Auto-generated method stub
+	public long addComponent(Component component) {
+
+		try
+		{
+			ComponentDTO componentDTO =modelMapper.map(componentRepository.save(component), ComponentDTO.class);
+			
+			return componentDTO.getComponentId();
+		}
+		catch(org.springframework.dao.DataIntegrityViolationException e)
+		{
+			return -1;			
+		}
+		catch(Exception e)
+		{
+			return -2;	
+		}
 		
 	}
 

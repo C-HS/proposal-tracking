@@ -5,7 +5,7 @@ import com.sbm.proposal.model.Project;
 
 public interface ProjectService {
 
-	public void addProject(Project project);
+	public long addProject(Project project);
 	public ProjectDTO updateProject(Project project);
 	public ProjectDTO getProjectByID(long projectId);
 	public void deleteProject(Project project);

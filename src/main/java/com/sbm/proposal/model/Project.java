@@ -32,7 +32,7 @@ public class Project {
 	private long projectId;
 	
 	@Column(name = "project_type_id")
-	private long projectTypeId;
+	private String projectTypeId;
 
 	
 	@Column(name = "component_id")
@@ -281,6 +281,15 @@ public class Project {
 	
 	@Column(name = "is_it_located_on_hill_side")
 	private int isItLocatedOnHillSide;
+	
+	@Column(name = "detail_cost")
+	private String detailCost;
+	
+	@Column(name = "funded_by")
+	private String fundedBy;
+	
+	@Column(name = "dpr_file_name")
+	private String dprFileName;
 	
 	/* Detail End */
 	

@@ -17,7 +17,7 @@ public class ProjectDTO {
 
 	private long projectId;
 	
-	private long projectTypeId;
+	private String projectTypeId;
 
 	private long componentId;
 
@@ -194,6 +194,12 @@ public class ProjectDTO {
 	private String distanceOfLandfillBoundryToNearestHabitationKms;
 
 	private int isItLocatedOnHillSide;
+	
+	private String detailCost;
+	
+	private String fundedBy;
+	
+	private String dprFileName;
 	
 	/* Detail End */
 	
