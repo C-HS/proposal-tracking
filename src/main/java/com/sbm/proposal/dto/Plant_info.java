@@ -1,7 +1,7 @@
 package com.sbm.proposal.dto;
 
 public class Plant_info {
-	private String State;
+	private String state;
 
     private String district;
 
@@ -29,11 +29,11 @@ public class Plant_info {
 
     private Designed_input_capacity_per_day designed_input_capacity_per_day;
 
-    public void setState(String State){
-        this.State = State;
+    public void setState(String state){
+        this.state = state;
     }
     public String getState(){
-        return this.State;
+        return this.state;
     }
     public void setDistrict(String district){
         this.district = district;

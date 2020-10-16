@@ -208,7 +208,7 @@ public class Project {
 							@Column(name = "method_of_disposal_of_treated_effluent")
 							private String methodOfDisposalOfTreatedEffluent;
 							
-							@Column(name = "is_co-treatement_of_faecal_sludge_happening")
+							@Column(name = "is_co_treatement_of_faecal_sludge_happening")
 							private int isCoTreatementOfFaecalSludgeHappening;
 							
 					/* fstp_technology_details  End */

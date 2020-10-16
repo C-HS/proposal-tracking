@@ -39,24 +39,9 @@ public class ProposalController {
 	@Autowired DumpsiteService dumpsiteService;
 	
 	@PostMapping("/api/proposal/create")
-	public ResponseEntity<String> registerRFIDTag(@RequestBody Root root) {
+	public ResponseEntity<String> createProposal(@RequestBody Root root) {
 		
 		
-		/*
-		 * System.out.println("Components "+root.getComponents().size());
-		 * 
-		 * for(Components c : root.getComponents()) {
-		 * System.out.println("Projects "+c.getProjects().size());
-		 * 
-		 * for(com.sbm.proposal.dto.Projects p : c.getProjects()) {
-		 * System.out.println("Dumpsite "+p.getDumpsites());
-		 * 
-		 * System.out.println("waterbody "+p.getWaterbody());
-		 * 
-		 * System.out.println("plant_info "+p.getPlant_info()); }
-		 * 
-		 * }
-		 */
 		
 		Proposal proposal = new Proposal();
 		
@@ -145,9 +130,8 @@ public class ProposalController {
 							  
 							  if(p.getPlant_info().getDesigned_input_capacity_per_day()!=null)
 							  {
-								  
-								  project.setCDWaste(Integer.parseInt(p.getPlant_info().getDesigned_input_capacity_per_day().getC_D_Waste()));
-								  project.setCDWasteTon(p.getPlant_info().getDesigned_input_capacity_per_day().getC_D_Waste_ton());
+								  project.setCDWaste(Integer.parseInt(p.getPlant_info().getDesigned_input_capacity_per_day().getC_d_waste()));
+								  project.setCDWasteTon(p.getPlant_info().getDesigned_input_capacity_per_day().getC_d_waste_ton());
 								  project.setDomesticHazardous(Integer.parseInt(p.getPlant_info().getDesigned_input_capacity_per_day().getDomestic_hazardous()));
 								  project.setDomesticHazardousTon(p.getPlant_info().getDesigned_input_capacity_per_day().getDomestic_hazardous_ton());
 								  project.setSanitary(Integer.parseInt(p.getPlant_info().getDesigned_input_capacity_per_day().getSanitary()));
@@ -174,10 +158,12 @@ public class ProposalController {
 									  project.setIsCoTreatementOfFaecalSludgeHappening(Integer.parseInt(p.getPlant_info().getDesigned_input_capacity_per_day().getFstp_technology_details().getIs_co_treatement_of_faecal_sludge_happening()));
 								  }
 								  
-								  if(p.getPlant_info().getDesigned_input_capacity_per_day().getSTP_technology_detail()!=null)
+
+								  if(p.getPlant_info().getDesigned_input_capacity_per_day().getStp_technology_detail()!=null)
 								  {
-									  project.setTechnologyUsed(p.getPlant_info().getDesigned_input_capacity_per_day().getSTP_technology_detail().getTechnology_used());
-									  project.setDisposalMethod(p.getPlant_info().getDesigned_input_capacity_per_day().getSTP_technology_detail().getDisposal_method());
+
+									  project.setTechnologyUsed(p.getPlant_info().getDesigned_input_capacity_per_day().getStp_technology_detail().getTechnology_used());
+									  project.setDisposalMethod(p.getPlant_info().getDesigned_input_capacity_per_day().getStp_technology_detail().getDisposal_method());
 								  }
 							  }
 							  

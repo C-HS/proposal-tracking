@@ -3,11 +3,12 @@ package com.sbm.proposal.dto;
 public class Designed_input_capacity_per_day {
 
 	
-	 private String C_D_Waste;
+	    private String c_d_waste;
 
-	    private String C_D_Waste_ton;
+	    private String c_d_waste_ton;
 
-	    private String domestic_hazardous;
+
+		private String domestic_hazardous;
 
 	    private String domestic_hazardous_ton;
 
@@ -41,20 +42,21 @@ public class Designed_input_capacity_per_day {
 
 	    private Fstp_technology_details fstp_technology_details;
 
-	    private STP_technology_detail STP_technology_detail;
+	    private STP_technology_detail stp_technology_detail;
 
-	    public void setC_D_Waste(String C_D_Waste){
-	        this.C_D_Waste = C_D_Waste;
-	    }
-	    public String getC_D_Waste(){
-	        return this.C_D_Waste;
-	    }
-	    public void setC_D_Waste_ton(String C_D_Waste_ton){
-	        this.C_D_Waste_ton = C_D_Waste_ton;
-	    }
-	    public String getC_D_Waste_ton(){
-	        return this.C_D_Waste_ton;
-	    }
+	    public String getC_d_waste() {
+			return c_d_waste;
+		}
+		public void setC_d_waste(String c_d_waste) {
+			this.c_d_waste = c_d_waste;
+		}
+		public String getC_d_waste_ton() {
+			return c_d_waste_ton;
+		}
+		public void setC_d_waste_ton(String c_d_waste_ton) {
+			this.c_d_waste_ton = c_d_waste_ton;
+		}
+
 	    public void setDomestic_hazardous(String domestic_hazardous){
 	        this.domestic_hazardous = domestic_hazardous;
 	    }
@@ -157,10 +159,13 @@ public class Designed_input_capacity_per_day {
 	    public Fstp_technology_details getFstp_technology_details(){
 	        return this.fstp_technology_details;
 	    }
-	    public void setSTP_technology_detail(STP_technology_detail STP_technology_detail){
-	        this.STP_technology_detail = STP_technology_detail;
-	    }
-	    public STP_technology_detail getSTP_technology_detail(){
-	        return this.STP_technology_detail;
-	    }
+		public STP_technology_detail getStp_technology_detail() {
+			return stp_technology_detail;
+		}
+		public void setStp_technology_detail(STP_technology_detail stp_technology_detail) {
+			this.stp_technology_detail = stp_technology_detail;
+		}
+
+	    
+	    
 }
