@@ -2,16 +2,25 @@ package com.sbm.proposal.controller;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import com.sbm.proposal.dto.ComponentDTO;
 import com.sbm.proposal.dto.Components;
 import com.sbm.proposal.dto.Dumpsites;
+import com.sbm.proposal.dto.ProposalDTO;
+import com.sbm.proposal.dto.ProposalFilter;
+import com.sbm.proposal.dto.ProposalStatus;
 import com.sbm.proposal.dto.Root;
+import com.sbm.proposal.dto.response.HomePage;
 import com.sbm.proposal.model.Component;
 import com.sbm.proposal.model.Dumpsite;
 import com.sbm.proposal.model.ImageAndVideo;
@@ -310,6 +319,79 @@ public class ProposalController {
 		{
 			return ResponseEntity.status(302).body("Error "+e.getMessage()); 
 		}
-	
 	}
+	
+	
+    @GetMapping("/api/proposal/home")
+    public ResponseEntity<HomePage> getHome(){
+    	
+    	List<ProposalDTO> proposalList = proposalService.getAllProposal();
+    	
+    	long totalProposals = 0;
+    	double totalFundRaisedByProposal=0; //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    	double amountApproved =0;
+    	
+    	totalProposals = proposalList.size();
+    	
+    	for(ProposalDTO proposal : proposalList)
+    	{
+    		amountApproved = amountApproved + proposal.getAmountApproved();
+    	}
+    	
+    	HomePage home = new HomePage();
+    	
+    	home.setTotalProposals(totalProposals);
+    	home.setTotalAmountRaisedByProposals(totalFundRaisedByProposal);
+    	home.setAmountApproved(amountApproved);
+    	home.setProposalList(proposalList);
+
+        return ResponseEntity.ok(home);
+    }
+    
+    
+    @GetMapping("/api/proposal/{proposalId}/components")
+    public ResponseEntity<List<ComponentDTO>> getComponentsByProposalId(@PathVariable long proposalId){
+    	
+    	List<ComponentDTO> componentList = componentService.getAllComponentsOfAProposal(proposalId);
+    	
+
+        return ResponseEntity.ok(componentList);
+    }
+    
+    
+	@PutMapping("/api/proposal/setStatus")
+	public ResponseEntity<String> setProposalStatus(@RequestBody ProposalStatus proposalStatus) {
+		
+		//System.out.println("ProposalId    "+proposalStatus.getProposalId());
+		//System.out.println("Status    "+proposalStatus.getProposalStatus());
+		
+		String response ="error";
+		try {
+		response = proposalService.setProposalStatus(proposalStatus);
+		}
+		catch(Exception e)
+		{
+		 response ="error "+e.getMessage();
+		}
+		
+		return ResponseEntity.ok(response);
+	}
+    
+	
+	
+	@GetMapping("/api/proposal/searchProposals")
+	public ResponseEntity<List<ProposalDTO>> searhProposal(@RequestBody ProposalFilter proposalFilter) {
+		
+		System.out.println("component    "+proposalFilter.getComponentName());
+		System.out.println("fromDate    "+proposalFilter.getFromDate());
+		System.out.println("toDate    "+proposalFilter.getToDate());
+		System.out.println("status    "+proposalFilter.getStatus());
+		
+
+		//proposalService.setProposalStatus(proposalStatus);
+
+		return ResponseEntity.ok(null);
+	}
+    
+    
 }

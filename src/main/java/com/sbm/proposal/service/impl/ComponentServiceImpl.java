@@ -1,5 +1,8 @@
 package com.sbm.proposal.service.impl;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -35,6 +38,16 @@ public class ComponentServiceImpl implements ComponentService{
 			return -2;	
 		}
 		
+	}
+	
+	@Override
+	public List<ComponentDTO> getAllComponentsOfAProposal(long proposalId) {
+
+		return componentRepository
+				.findByProposalId(proposalId)
+				.stream()
+				.map(e -> modelMapper.map(e, ComponentDTO.class))
+				.collect(Collectors.toList());
 	}
 
 	@Override

@@ -1,14 +1,18 @@
 package com.sbm.proposal.service.impl;
 
+import java.util.Date;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.sbm.proposal.dto.ProposalDTO;
+import com.sbm.proposal.dto.ProposalStatus;
 import com.sbm.proposal.model.Proposal;
 import com.sbm.proposal.repository.ProposalRepository;
 import com.sbm.proposal.service.ProposalService;
-
-import org.modelmapper.ModelMapper;
 
 @Service
 public class ProposalServiceImpl implements ProposalService{
@@ -35,6 +39,46 @@ public class ProposalServiceImpl implements ProposalService{
 		}
 		
 	}
+	
+	@Override
+	public List<ProposalDTO> getAllProposal() {
+
+		return proposalRepository
+				.findAll()
+				.stream()
+				.map(e -> modelMapper.map(e, ProposalDTO.class))
+				.collect(Collectors.toList());
+	}
+	
+	@Override
+	public String setProposalStatus(ProposalStatus proposalStatus) {
+
+		try
+		{
+				Proposal proposal = proposalRepository.findById(proposalStatus.getProposalId()).get();
+				
+				if(proposal!=null && proposal.getId()>0)
+				{
+					proposal.setProposalStatus(proposalStatus.getProposalStatus());
+					proposal.setDateLastUpdate(new Date());
+					
+					modelMapper.map(proposalRepository.save(proposal), ProposalDTO.class);
+					
+					return "proposal_updated";
+		
+				}
+				else
+				{
+					return "proposal_not_found";
+				}
+		}
+		catch(Exception e)
+		{
+			return "error_in_updated";
+		}
+
+	}
+	
 
 	@Override
 	public ProposalDTO updateProposal(Proposal proposal) {
