@@ -1,5 +1,6 @@
 package com.sbm.proposal.controller;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,7 +42,8 @@ public class ProposalController {
 	@PostMapping("/api/proposal/create")
 	public ResponseEntity<String> createProposal(@RequestBody Root root) {
 		
-		
+		try
+		{
 		
 		Proposal proposal = new Proposal();
 		
@@ -120,8 +122,12 @@ public class ProposalController {
 							  project.setStatus(p.getPlant_info().getStatus());
 							  project.setCost(p.getPlant_info().getCost());
 							  
-							  if(p.getPlant_info().getDate_of_start()!=null && !p.getPlant_info().equals(""))
-							  project.setDateOfStart(new Date()); //&&&&&&&&&&&&&&&
+							  if(p.getPlant_info().getDate_of_start()!=null && !p.getPlant_info().getDate_of_start().equals(""))
+							  {
+								  Date date_of_start=new SimpleDateFormat("dd/MM/yyyy").parse(p.getPlant_info().getDate_of_start());  
+								  project.setDateOfStart(date_of_start);
+							  }
+							  
 							  
 							  project.setProjectedYearOfOperation(p.getPlant_info().getProjected_year_of_operation());
 							  project.setIsItIntegrated(Integer.parseInt(p.getPlant_info().getIs_it_integrated()));
@@ -299,6 +305,11 @@ public class ProposalController {
 		
 		  
 		return ResponseEntity.status(200).body("created"); 
+		}
+		catch(Exception e)
+		{
+			return ResponseEntity.status(302).body("Error "+e.getMessage()); 
+		}
 	
 	}
 }
