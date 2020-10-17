@@ -35,7 +35,7 @@ public class Proposal {
 	private String proposalId;
 	
 	@Column(name = "date_receive")
-	@Temporal(TemporalType.TIMESTAMP)
+	@Temporal(TemporalType.DATE)
 	private Date dateReceive;
 	
 	@Column(name = "state_name")

@@ -381,16 +381,52 @@ public class ProposalController {
 	
 	@GetMapping("/api/proposal/searchProposals")
 	public ResponseEntity<List<ProposalDTO>> searhProposal(@RequestBody ProposalFilter proposalFilter) {
+		List<ProposalDTO> list =null;
+		try
+		{
 		
 		System.out.println("component    "+proposalFilter.getComponentName());
 		System.out.println("fromDate    "+proposalFilter.getFromDate());
 		System.out.println("toDate    "+proposalFilter.getToDate());
 		System.out.println("status    "+proposalFilter.getStatus());
 		
+		
+		List<Long> ids=null;
+		
+		Date fromDate =null;
+		
+		Date toDate =null;
+		
+		String status =null;
+		
+					if(!"NA".equals(proposalFilter.getComponentName()))
+					{
+						ids = componentService.getProposalIdsByComponentName(proposalFilter.getComponentName());
+						
+						if(ids!=null && ids.size()==0)
+							ids=null;
+					}
+					if(!"NA".equals(proposalFilter.getFromDate()) && !"NA".equals(proposalFilter.getToDate()))
+					{
 
+						 fromDate =new SimpleDateFormat("dd/MM/yyyy").parse(proposalFilter.getFromDate()); 
+						 toDate =new SimpleDateFormat("dd/MM/yyyy").parse(proposalFilter.getToDate()); 
+					}
+					if(!"NA".equals(proposalFilter.getStatus()))
+					{
+						status = proposalFilter.getStatus();
+					}
+					
+					list =	proposalService.search(ids, fromDate, toDate, status);
+		
+		}
+		catch(Exception e)
+		{
+			
+		}
 		//proposalService.setProposalStatus(proposalStatus);
 
-		return ResponseEntity.ok(null);
+		return ResponseEntity.ok(list);
 	}
     
     

@@ -79,6 +79,79 @@ public class ProposalServiceImpl implements ProposalService{
 
 	}
 	
+	
+	@Override
+	public List<ProposalDTO> search(List<Long> ids, Date startDate, Date endDate, String status) {
+		
+		if(ids!=null && startDate!=null && endDate!=null && status!=null)
+		{
+			return proposalRepository
+					.findAllProposalWithIdsBetweenDatesHavingStatus(ids, startDate, endDate,status)
+					.stream()
+					.map(e -> modelMapper.map(e, ProposalDTO.class))
+					.collect(Collectors.toList());
+			
+		}
+		else if(ids!=null && startDate!=null && endDate!=null && status==null)
+		{
+			return proposalRepository
+					.findAllProposalWithIdsBetweenDates(ids, startDate, endDate)
+					.stream()
+					.map(e -> modelMapper.map(e, ProposalDTO.class))
+					.collect(Collectors.toList());
+			
+		}
+		else if(ids!=null && startDate==null && endDate==null && status!=null)
+		{
+			return proposalRepository
+					.findAllProposalWithIdsHavingStatus(ids,status)
+					.stream()
+					.map(e -> modelMapper.map(e, ProposalDTO.class))
+					.collect(Collectors.toList());
+		}
+		else if(ids!=null && startDate==null && endDate==null && status==null)
+		{
+			return proposalRepository
+					.findAllById(ids)
+					.stream()
+					.map(e -> modelMapper.map(e, ProposalDTO.class))
+					.collect(Collectors.toList());
+		}
+		else if(ids==null && startDate==null && endDate==null && status!=null)
+		{
+			return proposalRepository.findAllProposalHavingStatus(status)
+					.stream()
+					.map(e -> modelMapper.map(e, ProposalDTO.class))
+					.collect(Collectors.toList());
+		}
+		else if(ids==null && startDate!=null && endDate!=null && status!=null)
+		{
+			return proposalRepository.findAllProposalBetweenDatesHavingStatus(startDate, endDate,status)
+					.stream()
+					.map(e -> modelMapper.map(e, ProposalDTO.class))
+					.collect(Collectors.toList());
+		}
+		else if(ids==null && startDate!=null && endDate!=null && status==null)
+		{
+			return proposalRepository.findAllProposalBetweenDates(startDate, endDate)
+					.stream()
+					.map(e -> modelMapper.map(e, ProposalDTO.class))
+					.collect(Collectors.toList());
+		}
+
+
+       return null;
+	}
+	
+	
+	@Override
+	public List<ProposalDTO> search1(Date startDate, Date endDate) {
+
+		return proposalRepository.findAllProposalBetweenDates(startDate, endDate)
+				.stream()
+				.map(e -> modelMapper.map(e, ProposalDTO.class))
+				.collect(Collectors.toList());
+	}
 
 	@Override
 	public ProposalDTO updateProposal(Proposal proposal) {

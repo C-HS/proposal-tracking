@@ -178,7 +178,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"componentName\" : \"SWM\",\r\n    \"fromDate\" : \"2020-10-10\",\r\n    \"toDate\" : \"2020-10-17\",\r\n    \"status\" : \"APPROVED\"\r\n}",
+					"raw": "{\r\n    \"componentName\" : \"SWM\",\r\n    \"fromDate\" : \"10/10/2020\",\r\n    \"toDate\" : \"18/10/2020\",\r\n    \"status\" : \"CREATED\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

@@ -11,4 +11,5 @@ import com.sbm.proposal.model.Component;
 public interface ComponentRepository extends JpaRepository<Component, Long> {
 
 	public List<Component> findByProposalId(long proposalId);
+	public List<Component> findByComponentName(String componentName);
 }

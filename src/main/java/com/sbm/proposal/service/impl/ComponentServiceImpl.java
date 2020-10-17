@@ -49,6 +49,16 @@ public class ComponentServiceImpl implements ComponentService{
 				.map(e -> modelMapper.map(e, ComponentDTO.class))
 				.collect(Collectors.toList());
 	}
+	
+	@Override
+	public List<Long> getProposalIdsByComponentName(String componentName) {
+
+		return componentRepository
+				.findByComponentName(componentName)
+				.stream()
+				.map(e -> modelMapper.map(e.getProposalId(), Long.class))
+				.collect(Collectors.toList());
+	}
 
 	@Override
 	public ComponentDTO updateComponent(Component component) {

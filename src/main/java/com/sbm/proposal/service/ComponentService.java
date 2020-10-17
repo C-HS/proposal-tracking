@@ -9,6 +9,7 @@ public interface ComponentService {
 
 	public long addComponent(Component component);
 	public List<ComponentDTO> getAllComponentsOfAProposal(long proposalId);
+	public List<Long> getProposalIdsByComponentName(String componentName);
 	public ComponentDTO updateComponent(Component component);
 	public ComponentDTO getComponentByID(String componentId);
 	public void deleteComponent(Component component);
